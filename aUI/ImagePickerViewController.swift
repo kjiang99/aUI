@@ -64,7 +64,7 @@ class ImagePickerViewController: UIViewController, UIImagePickerControllerDelega
     @IBOutlet weak var internetImageView: UIImageView!
     @IBOutlet weak var labelUrl: UILabel!
     
-    let imageUrlString = "http://vote1.azurewebsites.net/images/Actor04.jpg"
+    let imageUrlString = "http://vote1.azurewebsites.net/images/Return.jpg"
     
     @IBAction func pickFromInternet (_ sender: Any) {
         let imageURL = URL(string: imageUrlString)!
