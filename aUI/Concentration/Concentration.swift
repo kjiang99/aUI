@@ -32,7 +32,7 @@ struct Card : Hashable {
 }
 
 
-class Concentration {
+struct Concentration {
     init (numberOfPairsOfCards: Int) {
         var cardsTemp = [Card]()
         for _  in 0..<numberOfPairsOfCards {
@@ -90,7 +90,7 @@ class Concentration {
     
 
     
-    func chooseCard (at index: Int) {
+    mutating func chooseCard (at index: Int) {
         if !cards[index].isMatched {
             if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index {
                 //check if cards match
