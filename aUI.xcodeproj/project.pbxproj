@@ -13,8 +13,6 @@
 		88711A5E1FF2B7B200BA99F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88711A5C1FF2B7B200BA99F2 /* Main.storyboard */; };
 		88711A601FF2B7B200BA99F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88711A5F1FF2B7B200BA99F2 /* Assets.xcassets */; };
 		88711A631FF2B7B200BA99F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88711A611FF2B7B200BA99F2 /* LaunchScreen.storyboard */; };
-		D743813920EF0F2D005994B6 /* AdditionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D743813820EF0F2D005994B6 /* AdditionalViewController.swift */; };
-		D743813B20EF412A005994B6 /* CAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D743813A20EF412A005994B6 /* CAViewController.swift */; };
 		D77292112012DE95005F1860 /* ConcentrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77292102012DE95005F1860 /* ConcentrationViewController.swift */; };
 		D77292132013A27C005F1860 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77292122013A27C005F1860 /* Concentration.swift */; };
 		D7BA4B091FFA95DA0091F8C7 /* ZipCodeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BA4B081FFA95DA0091F8C7 /* ZipCodeTextFieldDelegate.swift */; };
@@ -37,8 +35,6 @@
 		88711A5F1FF2B7B200BA99F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88711A621FF2B7B200BA99F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88711A641FF2B7B200BA99F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D743813820EF0F2D005994B6 /* AdditionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalViewController.swift; sourceTree = "<group>"; };
-		D743813A20EF412A005994B6 /* CAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAViewController.swift; sourceTree = "<group>"; };
 		D77292102012DE95005F1860 /* ConcentrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationViewController.swift; sourceTree = "<group>"; };
 		D77292122013A27C005F1860 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
 		D7BA4B081FFA95DA0091F8C7 /* ZipCodeTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeTextFieldDelegate.swift; sourceTree = "<group>"; };
@@ -87,8 +83,6 @@
 				88711A5A1FF2B7B200BA99F2 /* ViewController.swift */,
 				884E29301FF437DC00B7C860 /* DiceViewController.swift */,
 				D7BA4B0C1FFB3AF00091F8C7 /* ImagePickerViewController.swift */,
-				D743813820EF0F2D005994B6 /* AdditionalViewController.swift */,
-				D743813720EF0DC6005994B6 /* CALayer */,
 				D772920F2012DE55005F1860 /* Concentration */,
 				D7BA4B321FFC42190091F8C7 /* Bug */,
 				D7DB30771FF9427700E438E4 /* Text Field */,
@@ -96,14 +90,6 @@
 				88711A641FF2B7B200BA99F2 /* Info.plist */,
 			);
 			path = aUI;
-			sourceTree = "<group>";
-		};
-		D743813720EF0DC6005994B6 /* CALayer */ = {
-			isa = PBXGroup;
-			children = (
-				D743813A20EF412A005994B6 /* CAViewController.swift */,
-			);
-			path = CALayer;
 			sourceTree = "<group>";
 		};
 		D772920E2012CFE4005F1860 /* Supporting Files */ = {
@@ -222,10 +208,8 @@
 				D77292132013A27C005F1860 /* Concentration.swift in Sources */,
 				D7BA4B341FFC42480091F8C7 /* BugFactory.swift in Sources */,
 				D77292112012DE95005F1860 /* ConcentrationViewController.swift in Sources */,
-				D743813B20EF412A005994B6 /* CAViewController.swift in Sources */,
 				D7BA4B0D1FFB3AF00091F8C7 /* ImagePickerViewController.swift in Sources */,
 				D7BA4B2F1FFC34E30091F8C7 /* BugViewController.swift in Sources */,
-				D743813920EF0F2D005994B6 /* AdditionalViewController.swift in Sources */,
 				D7DB30761FF935F200E438E4 /* TextfieldViewController.swift in Sources */,
 				D7BA4B0B1FFA9DE20091F8C7 /* CashTextFieldDelegate.swift in Sources */,
 				D7DB307B1FF942F100E438E4 /* EmojiTextFieldDelegate.swift in Sources */,
