@@ -155,6 +155,34 @@
             </objects>
             <point key="canvasLocation" x="1610" y="-531"/>
         </scene>
+        <!--Framework View Controller-->
+        <scene sceneID="6QN-iQ-MEk">
+            <objects>
+                <viewController id="rrc-5D-cdQ" customClass="FrameworkViewController" customModule="aUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bbT-3k-MtV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c44-1G-ZFU" customClass="Checkbox" customModule="Checkbox">
+                                <rect key="frame" x="137" y="130" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="checked" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lrZ-mt-ROf"/>
+                    </view>
+                    <connections>
+                        <outlet property="checkbox" destination="c44-1G-ZFU" id="rqg-AU-iWa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EdJ-lr-qsA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2270" y="-531"/>
+        </scene>
         <!--Concentration View Controller-->
         <scene sceneID="YRd-f2-WAy">
             <objects>
@@ -473,48 +501,55 @@
                                 <rect key="frame" x="0.0" y="598" width="375" height="180"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9L5-Iv-vH3">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="25.666666666666668"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="22.666666666666668"/>
                                         <state key="normal" title="Concentration Screen"/>
                                         <connections>
                                             <segue destination="lkC-z2-IoD" kind="show" id="BqA-9j-Bto"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ca2-mh-fuG">
-                                        <rect key="frame" x="0.0" y="25.666666666666629" width="375" height="25.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="22.666666666666629" width="375" height="22.333333333333329"/>
                                         <state key="normal" title="Bug Screen"/>
                                         <connections>
                                             <segue destination="FUU-a1-Osz" kind="show" id="xaT-Yi-3gU"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twx-0B-7Sb">
-                                        <rect key="frame" x="0.0" y="51.333333333333364" width="375" height="25.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="45" width="375" height="22.666666666666671"/>
                                         <state key="normal" title="TextField Screen"/>
                                         <connections>
                                             <segue destination="YQO-18-pLV" kind="show" id="7qi-FL-inh"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQU-1G-aCW">
+                                        <rect key="frame" x="0.0" y="67.666666666666629" width="375" height="22.333333333333329"/>
+                                        <state key="normal" title="Checkbox"/>
+                                        <connections>
+                                            <segue destination="rrc-5D-cdQ" kind="show" id="52g-5E-6EQ"/>
+                                        </connections>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAe-gV-AhE">
-                                        <rect key="frame" x="0.0" y="77" width="375" height="26"/>
+                                        <rect key="frame" x="0.0" y="90" width="375" height="22.666666666666671"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XbZ-pU-V7W">
-                                        <rect key="frame" x="0.0" y="103" width="375" height="25.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="112.66666666666663" width="375" height="22.333333333333343"/>
                                         <state key="normal" title="Rol Dice Program"/>
                                         <connections>
                                             <action selector="rollTheDiceProg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QKT-5O-ZCH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRb-0D-1UK">
-                                        <rect key="frame" x="0.0" y="128.66666666666663" width="375" height="25.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="135" width="375" height="22.666666666666657"/>
                                         <state key="normal" title="Roll Dice by Segue"/>
                                         <connections>
                                             <segue destination="RkX-3P-Rxh" kind="show" identifier="rollDiceSegue" id="AZp-x2-Wh6"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWy-9i-0ih">
-                                        <rect key="frame" x="0.0" y="154.33333333333337" width="375" height="25.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="157.66666666666663" width="375" height="22.333333333333343"/>
                                         <state key="normal" title="Image Picker Screen"/>
                                         <connections>
                                             <segue destination="JB9-Uw-1NI" kind="show" id="oPE-gQ-Dww"/>
@@ -547,7 +582,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2551.1999999999998" y="133.74384236453201"/>
+            <point key="canvasLocation" x="2270" y="143"/>
         </scene>
         <!--Textfield View Controller-->
         <scene sceneID="mVh-C1-wGE">
@@ -799,7 +834,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vw1-dY-mf5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3239.1999999999998" y="133.74384236453201"/>
+            <point key="canvasLocation" x="2999" y="143"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="N72-gn-sJo">

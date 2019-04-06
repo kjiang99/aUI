@@ -13,6 +13,9 @@
 		88711A5E1FF2B7B200BA99F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88711A5C1FF2B7B200BA99F2 /* Main.storyboard */; };
 		88711A601FF2B7B200BA99F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88711A5F1FF2B7B200BA99F2 /* Assets.xcassets */; };
 		88711A631FF2B7B200BA99F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88711A611FF2B7B200BA99F2 /* LaunchScreen.storyboard */; };
+		D718892C2257B4EA004D497A /* Checkbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D718892B2257B445004D497A /* Checkbox.framework */; };
+		D718892D2257B4EA004D497A /* Checkbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D718892B2257B445004D497A /* Checkbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D71889332257D5BD004D497A /* FrameworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71889322257D5BD004D497A /* FrameworkViewController.swift */; };
 		D77292112012DE95005F1860 /* ConcentrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77292102012DE95005F1860 /* ConcentrationViewController.swift */; };
 		D77292132013A27C005F1860 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77292122013A27C005F1860 /* Concentration.swift */; };
 		D7BA4B091FFA95DA0091F8C7 /* ZipCodeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BA4B081FFA95DA0091F8C7 /* ZipCodeTextFieldDelegate.swift */; };
@@ -26,6 +29,37 @@
 		D7DB307D1FF98E7E00E438E4 /* ColorizerTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DB307C1FF98E7E00E438E4 /* ColorizerTextFieldDelegate.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D718892A2257B445004D497A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D71889262257B445004D497A /* Checkbox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 826072DD1F2C9ECF003EE936;
+			remoteInfo = Checkbox;
+		};
+		D718892E2257B4EA004D497A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D71889262257B445004D497A /* Checkbox.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 826072DC1F2C9ECF003EE936;
+			remoteInfo = Checkbox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D71889302257B4EA004D497A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D718892D2257B4EA004D497A /* Checkbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		884E29301FF437DC00B7C860 /* DiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
 		88711A551FF2B7B200BA99F2 /* aUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,6 +69,8 @@
 		88711A5F1FF2B7B200BA99F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88711A621FF2B7B200BA99F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88711A641FF2B7B200BA99F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D71889262257B445004D497A /* Checkbox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Checkbox.xcodeproj; path = Checkbox/Checkbox.xcodeproj; sourceTree = "<group>"; };
+		D71889322257D5BD004D497A /* FrameworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkViewController.swift; sourceTree = "<group>"; };
 		D77292102012DE95005F1860 /* ConcentrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationViewController.swift; sourceTree = "<group>"; };
 		D77292122013A27C005F1860 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
 		D7BA4B081FFA95DA0091F8C7 /* ZipCodeTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeTextFieldDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D718892C2257B4EA004D497A /* Checkbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +99,7 @@
 		88711A4C1FF2B7B200BA99F2 = {
 			isa = PBXGroup;
 			children = (
+				D71889262257B445004D497A /* Checkbox.xcodeproj */,
 				88711A571FF2B7B200BA99F2 /* aUI */,
 				88711A561FF2B7B200BA99F2 /* Products */,
 			);
@@ -83,6 +121,7 @@
 				88711A5A1FF2B7B200BA99F2 /* ViewController.swift */,
 				884E29301FF437DC00B7C860 /* DiceViewController.swift */,
 				D7BA4B0C1FFB3AF00091F8C7 /* ImagePickerViewController.swift */,
+				D71889322257D5BD004D497A /* FrameworkViewController.swift */,
 				D772920F2012DE55005F1860 /* Concentration */,
 				D7BA4B321FFC42190091F8C7 /* Bug */,
 				D7DB30771FF9427700E438E4 /* Text Field */,
@@ -90,6 +129,14 @@
 				88711A641FF2B7B200BA99F2 /* Info.plist */,
 			);
 			path = aUI;
+			sourceTree = "<group>";
+		};
+		D71889272257B445004D497A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D718892B2257B445004D497A /* Checkbox.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		D772920E2012CFE4005F1860 /* Supporting Files */ = {
@@ -142,10 +189,12 @@
 				88711A511FF2B7B200BA99F2 /* Sources */,
 				88711A521FF2B7B200BA99F2 /* Frameworks */,
 				88711A531FF2B7B200BA99F2 /* Resources */,
+				D71889302257B4EA004D497A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D718892F2257B4EA004D497A /* PBXTargetDependency */,
 			);
 			name = aUI;
 			productName = aUI;
@@ -179,12 +228,28 @@
 			mainGroup = 88711A4C1FF2B7B200BA99F2;
 			productRefGroup = 88711A561FF2B7B200BA99F2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D71889272257B445004D497A /* Products */;
+					ProjectRef = D71889262257B445004D497A /* Checkbox.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				88711A541FF2B7B200BA99F2 /* aUI */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D718892B2257B445004D497A /* Checkbox.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Checkbox.framework;
+			remoteRef = D718892A2257B445004D497A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		88711A531FF2B7B200BA99F2 /* Resources */ = {
@@ -214,6 +279,7 @@
 				D7BA4B0B1FFA9DE20091F8C7 /* CashTextFieldDelegate.swift in Sources */,
 				D7DB307B1FF942F100E438E4 /* EmojiTextFieldDelegate.swift in Sources */,
 				88711A5B1FF2B7B200BA99F2 /* ViewController.swift in Sources */,
+				D71889332257D5BD004D497A /* FrameworkViewController.swift in Sources */,
 				884E29311FF437DC00B7C860 /* DiceViewController.swift in Sources */,
 				D7DB307D1FF98E7E00E438E4 /* ColorizerTextFieldDelegate.swift in Sources */,
 				D7BA4B091FFA95DA0091F8C7 /* ZipCodeTextFieldDelegate.swift in Sources */,
@@ -222,6 +288,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D718892F2257B4EA004D497A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Checkbox;
+			targetProxy = D718892E2257B4EA004D497A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		88711A5C1FF2B7B200BA99F2 /* Main.storyboard */ = {
@@ -353,6 +427,7 @@
 		88711A681FF2B7B200BA99F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -370,6 +445,7 @@
 		88711A691FF2B7B200BA99F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
