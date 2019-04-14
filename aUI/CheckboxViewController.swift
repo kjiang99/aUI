@@ -1,5 +1,5 @@
 //
-//  FrameworkViewController.swift
+//  CheckboxViewController.swift
 //  aUI
 //
 //  Created by Haojun Jiang on 4/5/19.
@@ -9,7 +9,7 @@
 import UIKit
 import Checkbox
 
-class FrameworkViewController: UIViewController {
+class CheckboxViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
