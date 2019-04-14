@@ -163,16 +163,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c44-1G-ZFU" customClass="Checkbox" customModule="Checkbox">
-                                <rect key="frame" x="137" y="130" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c44-1G-ZFU" customClass="Checkbox" customModule="Checkbox">
+                                <rect key="frame" x="120" y="108" width="75" height="70"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="checked" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="79Z-Bc-oid" appends="YES" id="lxs-xD-jOU"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="c44-1G-ZFU" firstAttribute="top" secondItem="lrZ-mt-ROf" secondAttribute="top" constant="20" id="9po-m5-eBZ"/>
+                            <constraint firstItem="c44-1G-ZFU" firstAttribute="leading" secondItem="lrZ-mt-ROf" secondAttribute="leading" constant="120" id="THe-O2-JY1"/>
+                            <constraint firstItem="lrZ-mt-ROf" firstAttribute="trailing" secondItem="c44-1G-ZFU" secondAttribute="trailing" constant="180" id="hNr-Gj-7RS"/>
+                            <constraint firstItem="lrZ-mt-ROf" firstAttribute="bottom" secondItem="c44-1G-ZFU" secondAttribute="bottom" constant="600" id="jd6-ep-7dq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lrZ-mt-ROf"/>
                     </view>
                     <connections>
@@ -180,6 +189,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EdJ-lr-qsA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="79Z-Bc-oid">
+                    <connections>
+                        <action selector="handlePan:" destination="rrc-5D-cdQ" id="olc-f0-OaR"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2270" y="-531"/>
         </scene>
