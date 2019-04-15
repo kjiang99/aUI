@@ -18,6 +18,16 @@
 		D71889332257D5BD004D497A /* CheckboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71889322257D5BD004D497A /* CheckboxViewController.swift */; };
 		D77292112012DE95005F1860 /* ConcentrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77292102012DE95005F1860 /* ConcentrationViewController.swift */; };
 		D77292132013A27C005F1860 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77292122013A27C005F1860 /* Concentration.swift */; };
+		D781417B226398EF00062377 /* SamplesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D781417A226398EF00062377 /* SamplesTableViewController.swift */; };
+		D781417D22639B8E00062377 /* SamplesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D781417C22639B8E00062377 /* SamplesTableViewCell.swift */; };
+		D7991D332264203C007BA7C3 /* BudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7991D2D2264203C007BA7C3 /* BudgetView.swift */; };
+		D7991D342264203C007BA7C3 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7991D2E2264203C007BA7C3 /* RatingView.swift */; };
+		D7991D352264203C007BA7C3 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7991D2F2264203C007BA7C3 /* ClockView.swift */; };
+		D7991D362264203C007BA7C3 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7991D302264203C007BA7C3 /* GraphView.swift */; };
+		D7991D372264203C007BA7C3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7991D312264203C007BA7C3 /* LoginView.swift */; };
+		D7991D382264203C007BA7C3 /* ThermometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7991D322264203C007BA7C3 /* ThermometerView.swift */; };
+		D7991D3A22643485007BA7C3 /* Preview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7991D3922643485007BA7C3 /* Preview.storyboard */; };
+		D7991D3C226437E3007BA7C3 /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7991D3B226437E3007BA7C3 /* CloseButton.swift */; };
 		D7BA4B091FFA95DA0091F8C7 /* ZipCodeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BA4B081FFA95DA0091F8C7 /* ZipCodeTextFieldDelegate.swift */; };
 		D7BA4B0B1FFA9DE20091F8C7 /* CashTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BA4B0A1FFA9DE20091F8C7 /* CashTextFieldDelegate.swift */; };
 		D7BA4B0D1FFB3AF00091F8C7 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BA4B0C1FFB3AF00091F8C7 /* ImagePickerViewController.swift */; };
@@ -73,6 +83,16 @@
 		D71889322257D5BD004D497A /* CheckboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxViewController.swift; sourceTree = "<group>"; };
 		D77292102012DE95005F1860 /* ConcentrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationViewController.swift; sourceTree = "<group>"; };
 		D77292122013A27C005F1860 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		D781417A226398EF00062377 /* SamplesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplesTableViewController.swift; sourceTree = "<group>"; };
+		D781417C22639B8E00062377 /* SamplesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplesTableViewCell.swift; sourceTree = "<group>"; };
+		D7991D2D2264203C007BA7C3 /* BudgetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BudgetView.swift; path = "../../../../zTemp/23 Draw/1-2/2-styling-starter/Portfolio/Portfolio/Controls/BudgetView.swift"; sourceTree = "<group>"; };
+		D7991D2E2264203C007BA7C3 /* RatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RatingView.swift; path = "../../../../zTemp/23 Draw/1-2/2-styling-starter/Portfolio/Portfolio/Controls/RatingView.swift"; sourceTree = "<group>"; };
+		D7991D2F2264203C007BA7C3 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClockView.swift; path = "../../../../zTemp/23 Draw/1-2/2-styling-starter/Portfolio/Portfolio/Controls/ClockView.swift"; sourceTree = "<group>"; };
+		D7991D302264203C007BA7C3 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GraphView.swift; path = "../../../../zTemp/23 Draw/1-2/2-styling-starter/Portfolio/Portfolio/Controls/GraphView.swift"; sourceTree = "<group>"; };
+		D7991D312264203C007BA7C3 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = "../../../../zTemp/23 Draw/1-2/2-styling-starter/Portfolio/Portfolio/Controls/LoginView.swift"; sourceTree = "<group>"; };
+		D7991D322264203C007BA7C3 /* ThermometerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThermometerView.swift; path = "../../../../zTemp/23 Draw/1-2/2-styling-starter/Portfolio/Portfolio/Controls/ThermometerView.swift"; sourceTree = "<group>"; };
+		D7991D3922643485007BA7C3 /* Preview.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Preview.storyboard; sourceTree = "<group>"; };
+		D7991D3B226437E3007BA7C3 /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
 		D7BA4B081FFA95DA0091F8C7 /* ZipCodeTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCodeTextFieldDelegate.swift; sourceTree = "<group>"; };
 		D7BA4B0A1FFA9DE20091F8C7 /* CashTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashTextFieldDelegate.swift; sourceTree = "<group>"; };
 		D7BA4B0C1FFB3AF00091F8C7 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +147,7 @@
 				D71889322257D5BD004D497A /* CheckboxViewController.swift */,
 				D772920F2012DE55005F1860 /* Concentration */,
 				D7BA4B321FFC42190091F8C7 /* Bug */,
+				D7814179226398A100062377 /* DrawSample */,
 				D7DB30771FF9427700E438E4 /* Text Field */,
 			);
 			path = aUI;
@@ -147,6 +168,31 @@
 				D77292122013A27C005F1860 /* Concentration.swift */,
 			);
 			path = Concentration;
+			sourceTree = "<group>";
+		};
+		D7814179226398A100062377 /* DrawSample */ = {
+			isa = PBXGroup;
+			children = (
+				D781417A226398EF00062377 /* SamplesTableViewController.swift */,
+				D781417C22639B8E00062377 /* SamplesTableViewCell.swift */,
+				D7991D3B226437E3007BA7C3 /* CloseButton.swift */,
+				D7991D3922643485007BA7C3 /* Preview.storyboard */,
+				D7991D2C2264201A007BA7C3 /* Controls */,
+			);
+			path = DrawSample;
+			sourceTree = "<group>";
+		};
+		D7991D2C2264201A007BA7C3 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				D7991D2D2264203C007BA7C3 /* BudgetView.swift */,
+				D7991D2F2264203C007BA7C3 /* ClockView.swift */,
+				D7991D302264203C007BA7C3 /* GraphView.swift */,
+				D7991D312264203C007BA7C3 /* LoginView.swift */,
+				D7991D2E2264203C007BA7C3 /* RatingView.swift */,
+				D7991D322264203C007BA7C3 /* ThermometerView.swift */,
+			);
+			path = Controls;
 			sourceTree = "<group>";
 		};
 		D7BA4B321FFC42190091F8C7 /* Bug */ = {
@@ -251,6 +297,7 @@
 				88711A631FF2B7B200BA99F2 /* LaunchScreen.storyboard in Resources */,
 				88711A601FF2B7B200BA99F2 /* Assets.xcassets in Resources */,
 				88711A5E1FF2B7B200BA99F2 /* Main.storyboard in Resources */,
+				D7991D3A22643485007BA7C3 /* Preview.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,19 +309,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7BA4B311FFC35150091F8C7 /* BugSettingsViewController.swift in Sources */,
+				D7991D352264203C007BA7C3 /* ClockView.swift in Sources */,
+				D7991D362264203C007BA7C3 /* GraphView.swift in Sources */,
 				D77292132013A27C005F1860 /* Concentration.swift in Sources */,
 				D7BA4B341FFC42480091F8C7 /* BugFactory.swift in Sources */,
 				D77292112012DE95005F1860 /* ConcentrationViewController.swift in Sources */,
+				D7991D3C226437E3007BA7C3 /* CloseButton.swift in Sources */,
+				D7991D382264203C007BA7C3 /* ThermometerView.swift in Sources */,
 				D7BA4B0D1FFB3AF00091F8C7 /* ImagePickerViewController.swift in Sources */,
 				D7BA4B2F1FFC34E30091F8C7 /* BugViewController.swift in Sources */,
+				D7991D372264203C007BA7C3 /* LoginView.swift in Sources */,
+				D781417D22639B8E00062377 /* SamplesTableViewCell.swift in Sources */,
 				D7DB30761FF935F200E438E4 /* TextfieldViewController.swift in Sources */,
 				D7BA4B0B1FFA9DE20091F8C7 /* CashTextFieldDelegate.swift in Sources */,
 				D7DB307B1FF942F100E438E4 /* EmojiTextFieldDelegate.swift in Sources */,
 				88711A5B1FF2B7B200BA99F2 /* MainViewController.swift in Sources */,
 				D71889332257D5BD004D497A /* CheckboxViewController.swift in Sources */,
 				884E29311FF437DC00B7C860 /* DiceViewController.swift in Sources */,
+				D7991D332264203C007BA7C3 /* BudgetView.swift in Sources */,
 				D7DB307D1FF98E7E00E438E4 /* ColorizerTextFieldDelegate.swift in Sources */,
+				D781417B226398EF00062377 /* SamplesTableViewController.swift in Sources */,
 				D7BA4B091FFA95DA0091F8C7 /* ZipCodeTextFieldDelegate.swift in Sources */,
+				D7991D342264203C007BA7C3 /* RatingView.swift in Sources */,
 				88711A591FF2B7B200BA99F2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
