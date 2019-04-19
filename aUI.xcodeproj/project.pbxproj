@@ -185,12 +185,12 @@
 		D7991D2C2264201A007BA7C3 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				D72079E5226564B7007FCD31 /* ThermometerView.swift */,
 				D72079E2226564B6007FCD31 /* BudgetView.swift */,
 				D72079E1226564B6007FCD31 /* ClockView.swift */,
-				D72079E6226564B7007FCD31 /* GraphView.swift */,
 				D72079E3226564B6007FCD31 /* LoginView.swift */,
 				D72079E4226564B7007FCD31 /* RatingView.swift */,
-				D72079E5226564B7007FCD31 /* ThermometerView.swift */,
+				D72079E6226564B7007FCD31 /* GraphView.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
