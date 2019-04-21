@@ -14,16 +14,34 @@
         <!--PackingList-->
         <scene sceneID="ZaH-FJ-Zgn">
             <objects>
-                <viewController storyboardIdentifier="PackingList" title="PackingList" id="6t2-RP-9Vd" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PackingList" title="PackingList" id="6t2-RP-9Vd" customClass="PackingListViewController" customModule="aUI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aK4-sL-s9S">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IEp-KR-8lM" userLabel="Menu View">
                                 <rect key="frame" x="0.0" y="44" width="414" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCq-lw-h0e" userLabel="Menu Button">
+                                        <rect key="frame" x="38" y="13" width="30" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="toggleMenu:" destination="6t2-RP-9Vd" eventType="touchUpInside" id="7HE-40-sS2"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Packing List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngH-Sr-PQO">
+                                        <rect key="frame" x="130" y="25" width="92" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="T32-29-Cje"/>
+                                    <constraint firstAttribute="height" constant="80" id="T32-29-Cje" userLabel="height = 80"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kow-BP-9c0" userLabel="Color View">
@@ -43,6 +61,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ECo-YZ-GEv"/>
                     </view>
+                    <connections>
+                        <outlet property="menuHeightConstraint" destination="T32-29-Cje" id="Jzh-jU-hzr"/>
+                        <outlet property="titleLabel" destination="ngH-Sr-PQO" id="88l-P6-vvr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8AY-gW-MK1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
