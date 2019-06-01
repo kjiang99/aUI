@@ -65,15 +65,13 @@ class MainViewController: UIViewController {
     
     
     @IBAction func testCancelAlert(_ sender: Any) {
-        let nextController = UIAlertController()
-        nextController.title = "Test Alert"
-        nextController.message = "This is a test"
+       let alertController = UIAlertController(title: "ToDo Exchange", message: "Do you want to Host or Join a session?", preferredStyle: .actionSheet)
         
 //        let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.default) { action in self.dismiss(animated: true, completion: nil)
-        let cancelAction = UIAlertAction(title: "cancel", style: UIAlertActionStyle.default, handler: {action in self.dismiss(animated: true, completion: nil)})
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
         
-        nextController.addAction(cancelAction)
-        self.present(nextController, animated: true, completion: nil)
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true, completion: nil)
     }
     
     
