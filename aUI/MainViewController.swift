@@ -11,7 +11,6 @@ import UIKit
 class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.currentDeviceLabel.text = currentDevice()
         
         if UserDefaults.standard.bool(forKey: "redSwitchOn") {
             redSwitch.isOn = true
@@ -55,7 +54,6 @@ class MainViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var currentDeviceLabel: UILabel!
     
     @IBAction func testActivity(_ sender: Any){
         let image = UIImage()
@@ -97,21 +95,6 @@ class MainViewController: UIViewController {
                 nextController.secondValue = randomDiceValue()
             }
         }
-    }
-    
-    func currentDevice() -> String {
-        var currentDevice = "current device is "
-        let deviceIdiom = UIScreen.main.traitCollection.userInterfaceIdiom
-        
-        switch deviceIdiom {
-        case .phone:
-            currentDevice += "iPhone"
-        case .pad:
-            currentDevice += "iPad"
-        default:
-            currentDevice += "unknow"
-        }
-        return currentDevice
     }
 }
 

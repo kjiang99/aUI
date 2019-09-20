@@ -81,11 +81,6 @@ class ConcentrationViewController: UIViewController {
 //            button.backgroundColor = UIColor.white
 //        }
 //    }
-    
-    
-    @IBAction func dismiss(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
 
     
     override func viewDidLoad() {

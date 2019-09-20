@@ -16,15 +16,9 @@ class ImagePickerViewController: UIViewController, UIImagePickerControllerDelega
         photoLibraryView.backgroundColor = .black
         internetImageView.backgroundColor = .black
     }
-    
-    
-    @IBAction func dismiss () {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
+
     
     // MARK: Pick from Photo Library
-    
     //https://makeapppie.com/2016/06/28/how-to-use-uiimagepickercontroller-for-a-camera-and-photo-library-in-swift-3-0/
     let picker = UIImagePickerController()
     

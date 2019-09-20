@@ -39,10 +39,6 @@ class TextfieldViewController: UIViewController, UITextFieldDelegate {
         self.textField6.delegate = self
     }
 
-
-    @IBAction func dismiss () {
-        dismiss(animated: true, completion: nil)
-    }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         var newText = textField.text! as NSString
