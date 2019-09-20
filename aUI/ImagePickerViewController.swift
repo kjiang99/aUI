@@ -15,8 +15,48 @@ class ImagePickerViewController: UIViewController {
         picker.delegate = self
         photoLibraryView.backgroundColor = .black
         internetImageView.backgroundColor = .black
+        
+        if UserDefaults.standard.bool(forKey: "redSwitchOn") {
+            redSwitch.isOn = true
+            changeColorComponent(redSwitch)
+        }
     }
 
+    @IBOutlet weak var redSwitch: UISwitch!
+    @IBOutlet weak var greenSwitch: UISwitch!
+    @IBOutlet weak var blueSwitch: UISwitch!
+    @IBOutlet weak var colorView: UIView!
+    
+    @IBAction func changeColorComponent (_ sender: Any) {
+        let r: CGFloat = self.redSwitch.isOn ? 1 : 0
+        let g: CGFloat = self.greenSwitch.isOn ? 1 : 0
+        let b: CGFloat = self.blueSwitch.isOn ? 1 : 0
+        self.colorView.backgroundColor = UIColor (red: r, green: g, blue: b, alpha: 1)
+    }
+    
+    @IBAction func redSwitchFlipped(_ sender: Any) {
+        if redSwitch.isOn {
+            UserDefaults.standard.set(true, forKey: "redSwitchOn")
+        } else {
+            UserDefaults.standard.set(false, forKey: "redSwitchOn")
+        }
+    }
+    
+    
+    @IBOutlet weak var redSlider: UISlider!
+    @IBOutlet weak var greenSlider: UISlider!
+    @IBOutlet weak var blueSlider: UISlider!
+    @IBOutlet weak var alphaSlider: UISlider!
+    @IBOutlet weak var colorView2: UIView!
+    
+    @IBAction func changeColorComponent2 (_ sender: Any) {
+        let r: CGFloat = CGFloat (self.redSlider.value)
+        let g: CGFloat = CGFloat (self.greenSlider.value)
+        let b: CGFloat = CGFloat (self.blueSlider.value)
+        let alpha: CGFloat = CGFloat (self.alphaSlider.value)
+        self.colorView2.backgroundColor = UIColor(red: r, green: g, blue: b, alpha: alpha)
+    }
+    
     
     // MARK: Pick from Photo Library
     //https://makeapppie.com/2016/06/28/how-to-use-uiimagepickercontroller-for-a-camera-and-photo-library-in-swift-3-0/
