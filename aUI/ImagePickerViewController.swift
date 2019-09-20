@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ImagePickerViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ImagePickerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,6 @@ class ImagePickerViewController: UIViewController, UIImagePickerControllerDelega
         self.present(picker, animated: true, completion: nil)
     }
     
-    
     @IBAction func shootPhoto(_ sender: Any) {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             picker.sourceType = UIImagePickerControllerSourceType.camera
@@ -41,36 +40,21 @@ class ImagePickerViewController: UIViewController, UIImagePickerControllerDelega
     }
     
 
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage
-        photoLibraryView.image = chosenImage
-        photoLibraryView.contentMode = .scaleAspectFit
-        photoLibraryView.backgroundColor = .white
-        dismiss(animated:true, completion: nil)
-    }
-    
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-
     // MARK: Pick from Internet
     @IBOutlet weak var internetImageView: UIImageView!
     @IBOutlet weak var labelUrl: UILabel!
     
-    let imageUrlString = "http://vote1.azurewebsites.net/images/Return.jpg"
-    
     @IBAction func pickFromInternet (_ sender: Any) {
+        let imageUrlString = "http://vote1.azurewebsites.net/images/Return.jpg"
         let imageURL = URL(string: imageUrlString)!
         
         let task = URLSession.shared.dataTask(with: imageURL) { (data, response, error) in
-            
             if error == nil {
                 let downloadImage = UIImage(data: data!)
                 self.performUIUpdatesOnMain {
                     self.internetImageView.image = downloadImage
                     self.internetImageView.backgroundColor = .white
-                    self.labelUrl.text = "From: \(self.imageUrlString)"
+                    self.labelUrl.text = "From: \(imageUrlString)"
                 }
             } else {
                 print(error.debugDescription)
@@ -80,11 +64,25 @@ class ImagePickerViewController: UIViewController, UIImagePickerControllerDelega
         task.resume()
     }
     
-    
     //MARK: GCDBlackBox
     func performUIUpdatesOnMain(_ updates: @escaping () -> Void) {
         DispatchQueue.main.async {
             updates()
         }
+    }
+}
+
+
+extension ImagePickerViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        photoLibraryView.image = chosenImage
+        photoLibraryView.contentMode = .scaleAspectFit
+        photoLibraryView.backgroundColor = .white
+        dismiss(animated:true, completion: nil)
+    }
+
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        self.dismiss(animated: true, completion: nil)
     }
 }

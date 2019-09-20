@@ -23,10 +23,5 @@ class BugSettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         currentBugTypeImageView.tintColor = BugFactory.bugTints[bugFactory.currentBugType.rawValue]
-
-    }
-    
-    @IBAction func dismiss (_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
     }
 }
