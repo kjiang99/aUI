@@ -33,7 +33,6 @@ class ColorizerTextFieldDelegate: NSObject, UITextFieldDelegate {
     
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        
         var colorsInTheText = [UIColor]()
         
         // Construct the text that will be in the field if this change is accepted
@@ -41,16 +40,13 @@ class ColorizerTextFieldDelegate: NSObject, UITextFieldDelegate {
         newText = newText.replacingCharacters(in: range, with: string) as NSString
         
         // For each dictionary entry in translations, pull out a string to search for
-        
         for (key, color) in self.colors {
-            
             if newText.range(of: key, options: .caseInsensitive).location != NSNotFound {
                 colorsInTheText.append(color)
             }
         }
         
         // If we found any colors then blend them and set the text color
-        
         if colorsInTheText.count > 0 {
             textField.textColor = self.blendColorArray(colorsInTheText)
         }
@@ -59,7 +55,7 @@ class ColorizerTextFieldDelegate: NSObject, UITextFieldDelegate {
     }
     
     
-    func blendColorArray(_ colors: [UIColor]) -> UIColor {
+    private func blendColorArray(_ colors: [UIColor]) -> UIColor {
         var colorComponents: [CGFloat] = [CGFloat](repeating: 0.0, count: 4)
         
         for color in colors {

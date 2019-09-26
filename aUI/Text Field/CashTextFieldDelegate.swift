@@ -11,10 +11,9 @@ import UIKit
 
 class CashTextFieldDelegate: NSObject, UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        
         let oldText = textField.text! as NSString
         var newText = oldText.replacingCharacters(in: range, with: string)
-        var newTextString = String (newText)
+        let newTextString = String (newText)
         
         let digits = CharacterSet.decimalDigits
         var digitText = ""
@@ -44,12 +43,12 @@ class CashTextFieldDelegate: NSObject, UITextFieldDelegate {
     }
     
 
-    func dollarStringFromInt(_ value: Int) -> String {
+    private func dollarStringFromInt(_ value: Int) -> String {
         return String(value / 100)
     }
     
-    func centsStringFromInt(_ value: Int) -> String {
-        
+    
+    private func centsStringFromInt(_ value: Int) -> String {
         let cents = value % 100
         var centsString = String(cents)
         
