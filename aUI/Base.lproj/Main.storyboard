@@ -525,23 +525,17 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type 5 digit zip code here" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="vRE-9o-WHA">
-                                <rect key="frame" x="16" y="276" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hih-UV-9Mz">
-                                <rect key="frame" x="16" y="314" width="343" height="30"/>
+                                <rect key="frame" x="16" y="248" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Character Count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CiE-Kw-m2f">
-                                <rect key="frame" x="81" y="208" width="213" height="60"/>
+                                <rect key="frame" x="115.66666666666667" y="208" width="143.66666666666663" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="fvZ-P5-XFr"/>
+                                    <constraint firstAttribute="height" constant="40" id="fvZ-P5-XFr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -558,17 +552,49 @@
                                     <action selector="toggleTheTextEditor:" destination="YQO-18-pLV" eventType="valueChanged" id="AZq-Yd-iC8"/>
                                 </connections>
                             </switch>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ivL-f5-HMQ">
+                                <rect key="frame" x="0.0" y="318" width="375" height="460"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Atz-jX-hp8">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ColorCell" id="S5e-tq-E1X">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                        <size key="customSize" width="50" height="50"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hih-UV-9Mz">
+                                <rect key="frame" x="16" y="286" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="CiE-Kw-m2f" firstAttribute="centerX" secondItem="sHC-98-8v1" secondAttribute="centerX" id="DQS-le-Rg9"/>
+                            <constraint firstItem="ivL-f5-HMQ" firstAttribute="top" secondItem="Yf5-6I-Mvg" secondAttribute="top" constant="230" id="HHo-Y8-yGk"/>
+                            <constraint firstItem="Yf5-6I-Mvg" firstAttribute="trailing" secondItem="ivL-f5-HMQ" secondAttribute="trailing" id="Oof-uO-sE6"/>
+                            <constraint firstItem="ivL-f5-HMQ" firstAttribute="leading" secondItem="Yf5-6I-Mvg" secondAttribute="leading" id="QQO-7h-EXy"/>
                             <constraint firstItem="CiE-Kw-m2f" firstAttribute="top" secondItem="Yf5-6I-Mvg" secondAttribute="top" constant="120" id="o12-QM-lQu"/>
+                            <constraint firstItem="Yf5-6I-Mvg" firstAttribute="bottom" secondItem="ivL-f5-HMQ" secondAttribute="bottom" id="yqG-jb-h92"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Yf5-6I-Mvg"/>
                     </view>
                     <connections>
                         <outlet property="characterCountLabel" destination="CiE-Kw-m2f" id="QyY-ig-cHg"/>
                         <outlet property="editingSwitch" destination="b9y-pn-iao" id="pcK-Yb-T6C"/>
+                        <outlet property="seasonCollectionView" destination="ivL-f5-HMQ" id="H5W-fk-FbY"/>
                         <outlet property="textField1" destination="SnJ-84-opr" id="ZRQ-Ph-VxV"/>
                         <outlet property="textField2" destination="VbY-k3-D3e" id="DTS-22-VXK"/>
                         <outlet property="textField3" destination="zwZ-BD-m3p" id="2og-l2-9Wv"/>
