@@ -40,6 +40,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Jc-Ww-Pc3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="wCF-W9-q6X"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZV-Ci-eN1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -119,6 +120,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OMv-Q9-D9z"/>
                     </view>
+                    <navigationItem key="navigationItem" id="e78-Nv-1VV"/>
                     <connections>
                         <outlet property="currentBugTypeImageView" destination="aYr-EJ-ARg" id="CX5-xa-a0f"/>
                     </connections>
@@ -164,6 +166,7 @@
                             <outlet property="delegate" destination="xY0-Ni-bXw" id="ePZ-Zb-S3b"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="fTG-Wb-xoh"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6gc-qs-x3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -198,6 +201,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lrZ-mt-ROf"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Zwr-f7-gao"/>
                     <connections>
                         <outlet property="checkbox" destination="c44-1G-ZFU" id="rqg-AU-iWa"/>
                     </connections>
@@ -209,7 +213,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2959" y="794"/>
+            <point key="canvasLocation" x="3638" y="134"/>
         </scene>
         <!--Concentration View Controller-->
         <scene sceneID="YRd-f2-WAy">
@@ -353,6 +357,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OI3-uC-mFe"/>
                     </view>
+                    <navigationItem key="navigationItem" id="pJb-FM-7e4"/>
                     <connections>
                         <outlet property="flipCountLabel" destination="x9E-3S-81z" id="pR0-KK-DAh"/>
                         <outletCollection property="cardButtons" destination="lQz-K6-h34" collectionClass="NSMutableArray" id="cIt-lv-vMU"/>
@@ -387,6 +392,48 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="oId-AZ-dsx">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="115"/>
                                         <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9L5-Iv-vH3">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="115"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <state key="normal" title="Concentration"/>
+                                                <connections>
+                                                    <segue destination="lkC-z2-IoD" kind="show" id="BqA-9j-Bto"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ca2-mh-fuG">
+                                                <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="115"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <state key="normal" title="Bug"/>
+                                                <connections>
+                                                    <segue destination="FUU-a1-Osz" kind="show" id="xaT-Yi-3gU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HGP-Xl-G4L">
+                                        <rect key="frame" x="0.0" y="115" width="375" height="115"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twx-0B-7Sb">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="115"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <state key="normal" title="TextField"/>
+                                                <connections>
+                                                    <segue destination="YQO-18-pLV" kind="show" id="7qi-FL-inh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKe-Cj-OhT">
+                                                <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="115"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <state key="normal" title="Gift Collection"/>
+                                                <connections>
+                                                    <segue destination="gwy-Q8-125" kind="show" id="0p5-BN-4lM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8do-ah-JOl">
+                                        <rect key="frame" x="0.0" y="230" width="375" height="115"/>
+                                        <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmJ-Fr-zA6">
                                                 <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="115"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
@@ -397,7 +444,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQU-1G-aCW">
                                                 <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="115"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                 <state key="normal" title="Checkbox"/>
                                                 <connections>
                                                     <segue destination="rrc-5D-cdQ" kind="show" id="52g-5E-6EQ"/>
@@ -405,50 +452,18 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HGP-Xl-G4L">
-                                        <rect key="frame" x="0.0" y="115" width="375" height="115"/>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8do-ah-JOl">
-                                        <rect key="frame" x="0.0" y="230" width="375" height="115"/>
-                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="j33-Bf-pT3">
                                         <rect key="frame" x="0.0" y="345" width="375" height="115"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9L5-Iv-vH3">
-                                                <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="115"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                                <state key="normal" title="Concentration"/>
-                                                <connections>
-                                                    <segue destination="lkC-z2-IoD" kind="show" id="BqA-9j-Bto"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ca2-mh-fuG">
-                                                <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="115"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                                <state key="normal" title="Bug"/>
-                                                <connections>
-                                                    <segue destination="FUU-a1-Osz" kind="show" id="xaT-Yi-3gU"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="31X-4T-pOD">
                                         <rect key="frame" x="0.0" y="460" width="375" height="115"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWy-9i-0ih">
-                                                <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="115"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="115"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="Image Picker"/>
                                                 <connections>
                                                     <segue destination="JB9-Uw-1NI" kind="show" id="oPE-gQ-Dww"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twx-0B-7Sb">
-                                                <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="115"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                <state key="normal" title="TextField"/>
-                                                <connections>
-                                                    <segue destination="YQO-18-pLV" kind="show" id="7qi-FL-inh"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -562,7 +577,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ColorCell" id="S5e-tq-E1X">
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ColorCell" id="S5e-tq-E1X" customClass="ColorCollectionViewCell" customModule="aUI" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -591,6 +606,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Yf5-6I-Mvg"/>
                     </view>
+                    <navigationItem key="navigationItem" id="jYg-FX-iOh"/>
                     <connections>
                         <outlet property="characterCountLabel" destination="CiE-Kw-m2f" id="QyY-ig-cHg"/>
                         <outlet property="editingSwitch" destination="b9y-pn-iao" id="pcK-Yb-T6C"/>
@@ -605,6 +621,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aqQ-OX-KUb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2269.5999999999999" y="793.5960591133005"/>
+        </scene>
+        <!--Gift View Controller-->
+        <scene sceneID="MA6-oR-Fnf">
+            <objects>
+                <viewController id="gwy-Q8-125" customClass="GiftViewController" customModule="aUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dpY-ca-HAu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Bj9-ym-bqB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Xg-za-QTq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8gi-yc-ddi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2958" y="794"/>
         </scene>
         <!--Image Picker View Controller-->
         <scene sceneID="bGH-tS-Zak">

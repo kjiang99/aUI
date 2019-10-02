@@ -22,6 +22,8 @@
 		D72079EA226564B7007FCD31 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72079E4226564B7007FCD31 /* RatingView.swift */; };
 		D72079EB226564B7007FCD31 /* ThermometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72079E5226564B7007FCD31 /* ThermometerView.swift */; };
 		D72079EC226564B7007FCD31 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72079E6226564B7007FCD31 /* GraphView.swift */; };
+		D72E4E7423445A5300D976D8 /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72E4E7323445A5300D976D8 /* ColorCollectionViewCell.swift */; };
+		D72E4E7723445E7800D976D8 /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72E4E7623445E7800D976D8 /* GiftViewController.swift */; };
 		D77292112012DE95005F1860 /* ConcentrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77292102012DE95005F1860 /* ConcentrationViewController.swift */; };
 		D77292132013A27C005F1860 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77292122013A27C005F1860 /* Concentration.swift */; };
 		D77479DE226A487C0049391F /* PackingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77479DD226A487C0049391F /* PackingListViewController.swift */; };
@@ -89,6 +91,8 @@
 		D72079E4226564B7007FCD31 /* RatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		D72079E5226564B7007FCD31 /* ThermometerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThermometerView.swift; sourceTree = "<group>"; };
 		D72079E6226564B7007FCD31 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		D72E4E7323445A5300D976D8 /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
+		D72E4E7623445E7800D976D8 /* GiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftViewController.swift; sourceTree = "<group>"; };
 		D77292102012DE95005F1860 /* ConcentrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationViewController.swift; sourceTree = "<group>"; };
 		D77292122013A27C005F1860 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
 		D77479DD226A487C0049391F /* PackingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackingListViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 				D7BA4B321FFC42190091F8C7 /* Bug */,
 				D7814179226398A100062377 /* DrawSample */,
 				D7DB30771FF9427700E438E4 /* Text Field */,
+				D72E4E7523445E1900D976D8 /* Gift */,
 			);
 			path = aUI;
 			sourceTree = "<group>";
@@ -163,6 +168,14 @@
 				D718892B2257B445004D497A /* Checkbox.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D72E4E7523445E1900D976D8 /* Gift */ = {
+			isa = PBXGroup;
+			children = (
+				D72E4E7623445E7800D976D8 /* GiftViewController.swift */,
+			);
+			path = Gift;
 			sourceTree = "<group>";
 		};
 		D772920F2012DE55005F1860 /* Concentration */ = {
@@ -223,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				D7DB30751FF935F200E438E4 /* TextfieldViewController.swift */,
+				D72E4E7323445A5300D976D8 /* ColorCollectionViewCell.swift */,
 				D7DB307A1FF942F100E438E4 /* EmojiTextFieldDelegate.swift */,
 				D7DB307C1FF98E7E00E438E4 /* ColorizerTextFieldDelegate.swift */,
 				D7BA4B081FFA95DA0091F8C7 /* ZipCodeTextFieldDelegate.swift */,
@@ -334,9 +348,11 @@
 				D7BA4B2F1FFC34E30091F8C7 /* BugViewController.swift in Sources */,
 				D77479E2226A52070049391F /* HorizontalItemList.swift in Sources */,
 				D781417D22639B8E00062377 /* SamplesTableViewCell.swift in Sources */,
+				D72E4E7723445E7800D976D8 /* GiftViewController.swift in Sources */,
 				D72079E8226564B7007FCD31 /* BudgetView.swift in Sources */,
 				D7DB30761FF935F200E438E4 /* TextfieldViewController.swift in Sources */,
 				D72079EA226564B7007FCD31 /* RatingView.swift in Sources */,
+				D72E4E7423445A5300D976D8 /* ColorCollectionViewCell.swift in Sources */,
 				D7BA4B0B1FFA9DE20091F8C7 /* CashTextFieldDelegate.swift in Sources */,
 				D7DB307B1FF942F100E438E4 /* EmojiTextFieldDelegate.swift in Sources */,
 				88711A5B1FF2B7B200BA99F2 /* MainViewController.swift in Sources */,
