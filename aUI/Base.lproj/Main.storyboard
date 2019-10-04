@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -631,9 +632,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Du0-sh-9EN">
-                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Lb8-ve-tKc">
+                                <rect key="frame" x="16" y="88" width="343" height="63"/>
+                                <color key="backgroundColor" name="checkedBorder"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="eug-o1-ALu"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="20" minimumInteritemSpacing="10" id="Lb8-ve-tKc">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -641,7 +645,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="giftCardCell" id="VQV-Eg-M9r" customClass="GiftCardCollectionViewCell" customModule="aUI" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="6.666666666666667" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="751-xI-O1u">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -664,15 +668,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Du0-sh-9EN" firstAttribute="top" secondItem="Bj9-ym-bqB" secondAttribute="top" id="HhR-8j-YXH"/>
-                            <constraint firstItem="Bj9-ym-bqB" firstAttribute="bottom" secondItem="Du0-sh-9EN" secondAttribute="bottom" id="Ngq-gz-biH"/>
-                            <constraint firstItem="Du0-sh-9EN" firstAttribute="leading" secondItem="Bj9-ym-bqB" secondAttribute="leading" id="feh-CZ-Kqs"/>
-                            <constraint firstItem="Bj9-ym-bqB" firstAttribute="trailing" secondItem="Du0-sh-9EN" secondAttribute="trailing" id="t02-mn-Wfm"/>
+                            <constraint firstItem="Du0-sh-9EN" firstAttribute="leading" secondItem="Bj9-ym-bqB" secondAttribute="leading" constant="16" id="feh-CZ-Kqs"/>
+                            <constraint firstItem="Bj9-ym-bqB" firstAttribute="trailing" secondItem="Du0-sh-9EN" secondAttribute="trailing" constant="16" id="t02-mn-Wfm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bj9-ym-bqB"/>
                     </view>
                     <navigationItem key="navigationItem" id="1Xg-za-QTq"/>
                     <connections>
-                        <outlet property="GiftCardCollectionView" destination="Du0-sh-9EN" id="UtL-qJ-QZW"/>
+                        <outlet property="giftCardCollectionView" destination="Du0-sh-9EN" id="UtL-qJ-QZW"/>
+                        <outlet property="giftCardCollectionViewHeightConstraint" destination="eug-o1-ALu" id="8nd-j0-SCQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8gi-yc-ddi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -955,5 +959,8 @@
         <image name="settings" width="256" height="256"/>
         <image name="spider" width="256" height="256"/>
         <image name="web" width="768" height="768"/>
+        <namedColor name="checkedBorder">
+            <color red="0.59290468692779541" green="0.79607844352722168" blue="0.69890838861465454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
     </resources>
 </document>
