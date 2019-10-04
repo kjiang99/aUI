@@ -12,8 +12,12 @@ class GiftViewController: UIViewController {
     
     @IBOutlet weak var giftCardCollectionView: UICollectionView!
     @IBOutlet weak var giftCardCollectionViewHeightConstraint: NSLayoutConstraint!
-    
+
     var giftCards: [GiftCardModel] = []
+    
+    @IBOutlet weak var colorCollectionView: UICollectionView!
+    let colorCollectionViewDatasource = ColorCollectionViewDatasource()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +30,9 @@ class GiftViewController: UIViewController {
             self.giftCards = cards
             self.giftCardCollectionView.reloadData()
         }
+        
+        colorCollectionView.dataSource = colorCollectionViewDatasource
+        colorCollectionView.delegate = colorCollectionViewDatasource
     }
     
     override func viewDidLayoutSubviews() {
