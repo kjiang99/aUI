@@ -16,4 +16,14 @@ class ZipCodeTextFieldDelegate: NSObject, UITextFieldDelegate {
         
         return newText.length <= 5
     }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if let text = textField.text {
+            if text.count > 3 {
+                textField.text = String(text.prefix(text.count - 3)) + "***"
+            } else {
+                textField.text = String(repeating: "*", count: text.count)
+            }
+        }
+    }
 }

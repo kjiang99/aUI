@@ -48,5 +48,68 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C9DC25E5-75E2-4317-AF3D-C77F1BE4D5C4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "aUI/DrawSample/SamplesTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "SamplesTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "C9DC25E5-75E2-4317-AF3D-C77F1BE4D5C4 - edba5e4df008e1e5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "aUI.SamplesTableViewController.init(style: __C.UITableViewStyle) -&gt; aUI.SamplesTableViewController"
+                  moduleName = "aUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kjiang/Documents/Apps/aUI/aUI/DrawSample/SamplesTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "C9DC25E5-75E2-4317-AF3D-C77F1BE4D5C4 - 8e1ad14653c06aa7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "aUI.SamplesTableViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; aUI.SamplesTableViewController"
+                  moduleName = "aUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kjiang/Documents/Apps/aUI/aUI/DrawSample/SamplesTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "C9DC25E5-75E2-4317-AF3D-C77F1BE4D5C4 - a580bcf7792756b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "aUI.SamplesTableViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;aUI.SamplesTableViewController&gt;"
+                  moduleName = "aUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kjiang/Documents/Apps/aUI/aUI/DrawSample/SamplesTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
