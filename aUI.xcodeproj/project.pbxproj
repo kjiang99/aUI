@@ -180,8 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				D72E4E7623445E7800D976D8 /* GiftViewController.swift */,
-				D777E5A123458B7800C1A88D /* GiftCard.swift */,
 				D777E5A32345A0D300C1A88D /* GiftCardCollectionViewCell.swift */,
+				D777E5A123458B7800C1A88D /* GiftCard.swift */,
 				D72E4E7323445A5300D976D8 /* ColorCollectionViewCell.swift */,
 				D777E5CF2346F12800C1A88D /* ColorCollectionViewDatasource.swift */,
 			);

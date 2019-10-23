@@ -40,6 +40,13 @@ class TextfieldViewController: UIViewController {
         self.textField3.delegate = self
         self.textField4.delegate = zipCodeDelegate
         self.textField5.delegate = cashTextFieldDelegate
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapTouch))
+        view.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    @objc func didTapTouch(sender: UIGestureRecognizer) {
+      view.endEditing(true)
     }
 }
 

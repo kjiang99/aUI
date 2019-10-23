@@ -58,7 +58,7 @@ class DiceViewController: UIViewController {
         button.setTitle("codeClick", for: .normal)
         button.setTitleColor(UIColor.brown, for: .normal)
         self.view.addSubview(button)
-        button.addTarget(self, action: #selector(DiceViewController.incrementCount), for: UIControlEvents.touchUpInside)
+        button.addTarget(self, action: #selector(self.incrementCount), for: UIControlEvents.touchUpInside)
     }
 
     
