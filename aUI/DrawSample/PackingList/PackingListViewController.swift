@@ -14,10 +14,11 @@ class PackingListViewController: UIViewController {
     var slider: HorizontalItemList!
     var items: [Int] = [5, 6, 7]
     
+    @IBOutlet var menuButton: UIButton!
     @IBOutlet var titleLabel: UILabel!
-    
     @IBOutlet var menuHeightConstraint: NSLayoutConstraint!
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         makeSlider()
@@ -27,7 +28,7 @@ class PackingListViewController: UIViewController {
     @IBAction func toggleMenu(_ sender: AnyObject) {
         menuIsOpen = !menuIsOpen
         
-        titleLabel.text = menuIsOpen ? "Select Item!!!!!!!!!!!!!" : "Packing List"
+        titleLabel.text = menuIsOpen ? "Select Item" : "Packing List"
         menuHeightConstraint.constant = menuIsOpen ? 200 : 80
         
         UIView.animate(
@@ -35,16 +36,19 @@ class PackingListViewController: UIViewController {
             delay: 0.0,
             options: .curveEaseIn,
             animations: {
+                let angle: CGFloat = self.menuIsOpen ? .pi / 4 : 0.0
+                self.menuButton.transform = CGAffineTransform(rotationAngle: angle)
                 self.view.layoutIfNeeded()
         },
             completion: nil
         )
     }
     
+    
     func makeSlider() {
         slider = HorizontalItemList(inView: view)
-        slider.didSelectItem = {index in
-            self.items.append(index)
+        slider.didSelectItem = { [weak self] index in //Add [weak self]
+            self?.items.append(index)
 //            self.tableView.reloadData()
 //            self.transitionCloseMenu()
         }

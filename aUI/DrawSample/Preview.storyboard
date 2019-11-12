@@ -60,6 +60,7 @@
                         <viewLayoutGuide key="safeArea" id="ECo-YZ-GEv"/>
                     </view>
                     <connections>
+                        <outlet property="menuButton" destination="LCq-lw-h0e" id="Uet-0Z-rB5"/>
                         <outlet property="menuHeightConstraint" destination="T32-29-Cje" id="Jzh-jU-hzr"/>
                         <outlet property="titleLabel" destination="ngH-Sr-PQO" id="88l-P6-vvr"/>
                     </connections>
