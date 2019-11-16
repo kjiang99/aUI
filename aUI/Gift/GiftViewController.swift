@@ -21,6 +21,7 @@ class GiftViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Gift Collection View"
         
         giftCardCollectionView.dataSource = self
         giftCardCollectionView.delegate = self

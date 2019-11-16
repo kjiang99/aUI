@@ -12,6 +12,8 @@ class ImagePickerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Image Picker"
+        
         picker.delegate = self
         photoLibraryView.backgroundColor = .black
         internetImageView.backgroundColor = .black

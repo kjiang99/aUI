@@ -13,8 +13,7 @@ class CheckboxViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.title = "Gesture"
     }
     
 
@@ -30,5 +29,4 @@ class CheckboxViewController: UIViewController {
         recognizerView.center.y += translation.y
         recognizer.setTranslation(.zero, in: view)
     }
-
 }

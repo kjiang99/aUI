@@ -9,7 +9,7 @@
 import UIKit
 
 class SamplesTableViewController: UITableViewController {
-    private let sampleNames = ["PackingList","Thermometer", "Budget", "Clock", "Login", "Rating", "Graph"]
+    private let sampleNames = ["PackingList","Thermometer"] // ["PackingList","Thermometer", "Budget", "Clock", "Login", "Rating", "Graph"]
 
     override func viewDidLoad() {
         super.viewDidLoad()

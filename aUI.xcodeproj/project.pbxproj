@@ -13,6 +13,9 @@
 		88711A5E1FF2B7B200BA99F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88711A5C1FF2B7B200BA99F2 /* Main.storyboard */; };
 		88711A601FF2B7B200BA99F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88711A5F1FF2B7B200BA99F2 /* Assets.xcassets */; };
 		88711A631FF2B7B200BA99F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88711A611FF2B7B200BA99F2 /* LaunchScreen.storyboard */; };
+		D70F8EBC2380822600556F56 /* GestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70F8EBB2380822600556F56 /* GestureViewController.swift */; };
+		D70F8ED12380AC1600556F56 /* chomp.caf in Resources */ = {isa = PBXBuildFile; fileRef = D70F8ECE2380A84200556F56 /* chomp.caf */; };
+		D70F8ED22380AC1B00556F56 /* hehehe.caf in Resources */ = {isa = PBXBuildFile; fileRef = D70F8ECD2380A84200556F56 /* hehehe.caf */; };
 		D718892C2257B4EA004D497A /* Checkbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D718892B2257B445004D497A /* Checkbox.framework */; };
 		D718892D2257B4EA004D497A /* Checkbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D718892B2257B445004D497A /* Checkbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D71889332257D5BD004D497A /* CheckboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71889322257D5BD004D497A /* CheckboxViewController.swift */; };
@@ -86,6 +89,9 @@
 		88711A5F1FF2B7B200BA99F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88711A621FF2B7B200BA99F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88711A641FF2B7B200BA99F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D70F8EBB2380822600556F56 /* GestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureViewController.swift; sourceTree = "<group>"; };
+		D70F8ECD2380A84200556F56 /* hehehe.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = hehehe.caf; sourceTree = "<group>"; };
+		D70F8ECE2380A84200556F56 /* chomp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chomp.caf; sourceTree = "<group>"; };
 		D71889262257B445004D497A /* Checkbox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Checkbox.xcodeproj; path = Checkbox/Checkbox.xcodeproj; sourceTree = "<group>"; };
 		D71889322257D5BD004D497A /* CheckboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxViewController.swift; sourceTree = "<group>"; };
 		D72079E1226564B6007FCD31 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
@@ -150,15 +156,13 @@
 		88711A571FF2B7B200BA99F2 /* aUI */ = {
 			isa = PBXGroup;
 			children = (
+				D70F8ECC2380A84200556F56 /* Resources */,
 				88711A5C1FF2B7B200BA99F2 /* Main.storyboard */,
 				88711A5F1FF2B7B200BA99F2 /* Assets.xcassets */,
 				88711A641FF2B7B200BA99F2 /* Info.plist */,
 				88711A611FF2B7B200BA99F2 /* LaunchScreen.storyboard */,
 				88711A581FF2B7B200BA99F2 /* AppDelegate.swift */,
-				88711A5A1FF2B7B200BA99F2 /* MainViewController.swift */,
-				884E29301FF437DC00B7C860 /* DiceViewController.swift */,
-				D7BA4B0C1FFB3AF00091F8C7 /* ImagePickerViewController.swift */,
-				D71889322257D5BD004D497A /* CheckboxViewController.swift */,
+				D70F8EBA238081AB00556F56 /* Controllers */,
 				D772920F2012DE55005F1860 /* Concentration */,
 				D7BA4B321FFC42190091F8C7 /* Bug */,
 				D7814179226398A100062377 /* DrawSample */,
@@ -166,6 +170,27 @@
 				D72E4E7523445E1900D976D8 /* Gift */,
 			);
 			path = aUI;
+			sourceTree = "<group>";
+		};
+		D70F8EBA238081AB00556F56 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				88711A5A1FF2B7B200BA99F2 /* MainViewController.swift */,
+				D70F8EBB2380822600556F56 /* GestureViewController.swift */,
+				D71889322257D5BD004D497A /* CheckboxViewController.swift */,
+				884E29301FF437DC00B7C860 /* DiceViewController.swift */,
+				D7BA4B0C1FFB3AF00091F8C7 /* ImagePickerViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D70F8ECC2380A84200556F56 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D70F8ECD2380A84200556F56 /* hehehe.caf */,
+				D70F8ECE2380A84200556F56 /* chomp.caf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		D71889272257B445004D497A /* Products */ = {
@@ -331,6 +356,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D70F8ED22380AC1B00556F56 /* hehehe.caf in Resources */,
+				D70F8ED12380AC1600556F56 /* chomp.caf in Resources */,
 				88711A631FF2B7B200BA99F2 /* LaunchScreen.storyboard in Resources */,
 				88711A601FF2B7B200BA99F2 /* Assets.xcassets in Resources */,
 				88711A5E1FF2B7B200BA99F2 /* Main.storyboard in Resources */,
@@ -365,6 +392,7 @@
 				D7DB30761FF935F200E438E4 /* TextfieldViewController.swift in Sources */,
 				D72079EA226564B7007FCD31 /* RatingView.swift in Sources */,
 				D72E4E7423445A5300D976D8 /* ColorCollectionViewCell.swift in Sources */,
+				D70F8EBC2380822600556F56 /* GestureViewController.swift in Sources */,
 				D7BA4B0B1FFA9DE20091F8C7 /* CashTextFieldDelegate.swift in Sources */,
 				D7DB307B1FF942F100E438E4 /* EmojiTextFieldDelegate.swift in Sources */,
 				88711A5B1FF2B7B200BA99F2 /* MainViewController.swift in Sources */,

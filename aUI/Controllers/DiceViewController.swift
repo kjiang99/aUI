@@ -59,10 +59,11 @@ class DiceViewController: UIViewController {
     codeButton.addTarget(self, action: #selector(codeIncrementCount), for: UIControlEvents.touchUpInside)
     return codeButton
   }()
+    
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    self.title = "Dice"
     self.view.addSubview(codeLabel)
     self.view.addSubview(codeButton)
   }

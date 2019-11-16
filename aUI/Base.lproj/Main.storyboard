@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EYj-Ec-nze">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EYj-Ec-nze">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -380,6 +380,36 @@
             </objects>
             <point key="canvasLocation" x="2270" y="-531"/>
         </scene>
+        <!--Gesture View Controller-->
+        <scene sceneID="8yM-4U-xQX">
+            <objects>
+                <viewController id="mxF-67-OCc" customClass="GestureViewController" customModule="aUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Xu-BH-VEN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="monkey" translatesAutoresizingMaskIntoConstraints="NO" id="7eu-nm-Fmd">
+                                <rect key="frame" x="44" y="135" width="216" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banana" translatesAutoresizingMaskIntoConstraints="NO" id="20F-SA-hQC">
+                                <rect key="frame" x="44" y="309" width="216" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="wVh-Cz-fwj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="G9A-NC-yED"/>
+                    <connections>
+                        <outletCollection property="interactiveSubviews" destination="7eu-nm-Fmd" collectionClass="NSMutableArray" id="uVN-Mu-n9e"/>
+                        <outletCollection property="interactiveSubviews" destination="20F-SA-hQC" collectionClass="NSMutableArray" id="8wQ-oo-mg7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mAE-6p-0Fi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2957.5999999999999" y="-531.2807881773399"/>
+        </scene>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -423,12 +453,12 @@
                                                     <segue destination="YQO-18-pLV" kind="show" id="7qi-FL-inh"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKe-Cj-OhT">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mt0-O5-nry">
                                                 <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="115"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                <state key="normal" title="Gift Card"/>
+                                                <state key="normal" title="Gesture"/>
                                                 <connections>
-                                                    <segue destination="gwy-Q8-125" kind="show" id="0p5-BN-4lM"/>
+                                                    <segue destination="mxF-67-OCc" kind="show" id="CCB-SP-TaS"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -444,12 +474,12 @@
                                                     <segue destination="xY0-Ni-bXw" kind="show" id="4gR-8H-hDc"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQU-1G-aCW">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKe-Cj-OhT">
                                                 <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="115"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                <state key="normal" title="Checkbox"/>
+                                                <state key="normal" title="Gift Card"/>
                                                 <connections>
-                                                    <segue destination="rrc-5D-cdQ" kind="show" id="52g-5E-6EQ"/>
+                                                    <segue destination="gwy-Q8-125" kind="show" id="0p5-BN-4lM"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -461,11 +491,19 @@
                                         <rect key="frame" x="0.0" y="460" width="375" height="115"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWy-9i-0ih">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="115"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="115"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="Image Picker"/>
                                                 <connections>
                                                     <segue destination="JB9-Uw-1NI" kind="show" id="oPE-gQ-Dww"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQU-1G-aCW">
+                                                <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="115"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <state key="normal" title="Checkbox"/>
+                                                <connections>
+                                                    <segue destination="rrc-5D-cdQ" kind="show" id="52g-5E-6EQ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -662,7 +700,7 @@
                                                 </imageView>
                                             </subviews>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="giftCardImageView" destination="qP3-YO-Msp" id="2ED-VY-LSM"/>
                                         </connections>
@@ -943,7 +981,7 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5e-fA-yRj" userLabel="LineH">
                                 <rect key="frame" x="0.0" y="448" width="375" height="3"/>
-                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="3" id="cEb-5m-Nac"/>
                                 </constraints>
@@ -994,8 +1032,10 @@
     </scenes>
     <resources>
         <image name="back" width="256" height="256"/>
+        <image name="banana" width="500" height="500"/>
         <image name="d1" width="100" height="100"/>
         <image name="d5" width="100" height="100"/>
+        <image name="monkey" width="500" height="500"/>
         <image name="settings" width="256" height="256"/>
         <image name="spider" width="256" height="256"/>
         <image name="web" width="768" height="768"/>
