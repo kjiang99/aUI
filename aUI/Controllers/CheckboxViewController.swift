@@ -10,23 +10,10 @@ import UIKit
 import Checkbox
 
 class CheckboxViewController: UIViewController {
-
+    @IBOutlet weak var checkbox: Checkbox!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Gesture"
-    }
-    
-
-    @IBOutlet weak var checkbox: Checkbox!
-
-    @IBAction func handlePan(_ recognizer: UIPanGestureRecognizer) {
-        guard let recognizerView = recognizer.view else {
-            return
-        }
-        
-        let translation = recognizer.translation(in: view)
-        recognizerView.center.x += translation.x
-        recognizerView.center.y += translation.y
-        recognizer.setTranslation(.zero, in: view)
     }
 }
