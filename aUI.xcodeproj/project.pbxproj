@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BB6B1B22396EFA7007F76F8 /* ParentChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6B1B12396EFA7007F76F8 /* ParentChildViewController.swift */; };
 		884E29311FF437DC00B7C860 /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884E29301FF437DC00B7C860 /* DiceViewController.swift */; };
 		88711A591FF2B7B200BA99F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88711A581FF2B7B200BA99F2 /* AppDelegate.swift */; };
 		88711A5B1FF2B7B200BA99F2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88711A5A1FF2B7B200BA99F2 /* MainViewController.swift */; };
@@ -81,6 +82,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5BB6B1B12396EFA7007F76F8 /* ParentChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentChildViewController.swift; sourceTree = "<group>"; };
 		884E29301FF437DC00B7C860 /* DiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
 		88711A551FF2B7B200BA99F2 /* aUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88711A581FF2B7B200BA99F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				D71889322257D5BD004D497A /* CheckboxViewController.swift */,
 				884E29301FF437DC00B7C860 /* DiceViewController.swift */,
 				D7BA4B0C1FFB3AF00091F8C7 /* ImagePickerViewController.swift */,
+				5BB6B1B12396EFA7007F76F8 /* ParentChildViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				D72079EB226564B7007FCD31 /* ThermometerView.swift in Sources */,
 				D7BA4B0D1FFB3AF00091F8C7 /* ImagePickerViewController.swift in Sources */,
 				D7BA4B2F1FFC34E30091F8C7 /* BugViewController.swift in Sources */,
+				5BB6B1B22396EFA7007F76F8 /* ParentChildViewController.swift in Sources */,
 				D777E5D02346F12800C1A88D /* ColorCollectionViewDatasource.swift in Sources */,
 				D77479E2226A52070049391F /* HorizontalItemList.swift in Sources */,
 				D781417D22639B8E00062377 /* SamplesTableViewCell.swift in Sources */,
