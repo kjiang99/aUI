@@ -18,7 +18,11 @@ class ParentChildViewController: UIViewController {
         child2ViewController.remove()
         
         self.addChildViewController(child1ViewController)
-        self.vwContainer.addSubview(child1ViewController.view)
+        
+        UIView.transition(with: self.vwContainer, duration: 0.5, options: .transitionFlipFromLeft, animations: {
+            self.vwContainer.addSubview(self.child1ViewController.view)
+        }, completion: nil)
+        
         child1ViewController.view.frame = vwContainer.bounds
         child1ViewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         child1ViewController.didMove(toParentViewController: self)
@@ -26,7 +30,11 @@ class ParentChildViewController: UIViewController {
     
     @IBAction func tapChild2(_ sender: Any) {
         self.addChildViewController(child2ViewController)
-        self.vwContainer.addSubview(child2ViewController.view)
+        
+        UIView.transition(with: self.vwContainer, duration: 0.5, options: .transitionFlipFromLeft, animations: {
+            self.vwContainer.addSubview(self.child2ViewController.view)
+        }, completion: nil)
+        
         child2ViewController.didMove(toParentViewController: self)
     }
     
@@ -36,8 +44,8 @@ class ParentChildViewController: UIViewController {
         self.title = "ParentChild"
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        child1ViewController = storyboard.instantiateViewController(withIdentifier: "child1ViewController") as! Child1ViewController
-        child2ViewController = storyboard.instantiateViewController(withIdentifier: "child2ViewController") as! Child2ViewController
+        child1ViewController = storyboard.instantiateViewController(withIdentifier: "child1ViewController") as? Child1ViewController
+        child2ViewController = storyboard.instantiateViewController(withIdentifier: "child2ViewController") as? Child2ViewController
     }
 }
 

@@ -14,6 +14,6 @@ class CheckboxViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Gesture"
+        self.title = "Checkbox"
     }
 }
