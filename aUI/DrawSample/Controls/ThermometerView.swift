@@ -70,7 +70,7 @@ class ThermometerView: UIView {
         thermoLayer.strokeColor = UIColor.darkGray.cgColor
         thermoLayer.lineWidth = width / 3
         thermoLayer.position.x = lineWidth / 2
-        thermoLayer.lineCap = kCALineCapRound
+        thermoLayer.lineCap = CAShapeLayerLineCap.round
         
         maskLayer.path = thermoLayer.path
         maskLayer.lineWidth = thermoLayer.lineWidth

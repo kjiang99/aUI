@@ -56,7 +56,7 @@ class DiceViewController: UIViewController {
     codeButton.setTitle("codeClick", for: .normal)
     codeButton.setTitleColor(.brown, for: .normal)
     codeButton.frame = CGRect.init(x: 120, y: 580, width: 80, height: 60)
-    codeButton.addTarget(self, action: #selector(codeIncrementCount), for: UIControlEvents.touchUpInside)
+    codeButton.addTarget(self, action: #selector(codeIncrementCount), for: UIControl.Event.touchUpInside)
     return codeButton
   }()
     

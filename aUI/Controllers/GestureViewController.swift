@@ -68,7 +68,7 @@ class GestureViewController: UIViewController {
         
         let velocity = recognizer.velocity(in: view)
         let vectorToFinalPoint = CGPoint(x: velocity.x / 15, y: velocity.y / 15)
-        let bounds = UIEdgeInsetsInsetRect(view.bounds, view.safeAreaInsets)
+        let bounds = view.bounds.inset(by: view.safeAreaInsets)
         var finalPoint = recognizerView.center
         finalPoint.x += vectorToFinalPoint.x
         finalPoint.y += vectorToFinalPoint.y

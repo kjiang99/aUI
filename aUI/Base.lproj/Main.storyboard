@@ -260,7 +260,6 @@
         <!--Child2 View Controller-->
         <scene sceneID="dmM-cs-BIP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zb3-T8-4Kt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="child2ViewController" id="ok5-m0-nAe" customClass="Child2ViewController" customModule="aUI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bIl-zJ-vSP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -269,6 +268,7 @@
                         <viewLayoutGuide key="safeArea" id="oJA-Rv-zDG"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zb3-T8-4Kt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2270" y="1465"/>
         </scene>

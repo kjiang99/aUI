@@ -83,7 +83,7 @@ class BudgetView: UIView {
     layer.path = path.cgPath
     layer.lineWidth = 20
     layer.fillColor = nil
-    layer.lineCap = kCALineCapRound
+    layer.lineCap = CAShapeLayerLineCap.round
   }
   
   

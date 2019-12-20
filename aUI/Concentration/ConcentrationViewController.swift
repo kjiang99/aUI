@@ -26,7 +26,7 @@ class ConcentrationViewController: UIViewController {
     @IBOutlet private var cardButtons: [UIButton]!
 
     @IBAction private func touchCard(_ sender: UIButton) {
-        if let cardIndex = cardButtons.index(of: sender) {
+        if let cardIndex = cardButtons.firstIndex(of: sender) {
             if !game.cards[cardIndex].isMatched,  !game.cards[cardIndex].isFaceUp  {
                 flipCount += 1                
                 game.chooseCard(at: cardIndex)
@@ -48,10 +48,10 @@ class ConcentrationViewController: UIViewController {
             let button = cardButtons[index]
             let card = game.cards[index]
             if card.isFaceUp {
-                button.setTitle(emoji(for: card), for: UIControlState.normal)
+                button.setTitle(emoji(for: card), for: UIControl.State.normal)
                 button.backgroundColor = UIColor.white
             } else {
-                button.setTitle("", for: UIControlState.normal);
+                button.setTitle("", for: UIControl.State.normal);
                 button.backgroundColor = card.isMatched ?  UIColor.clear : UIColor.orange
             }
         }

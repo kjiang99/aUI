@@ -17,7 +17,7 @@ class ParentChildViewController: UIViewController {
     @IBAction func tapChild1(_ sender: Any) {
         child2ViewController.remove()
         
-        self.addChildViewController(child1ViewController)
+        self.addChild(child1ViewController)
         
         UIView.transition(with: self.vwContainer, duration: 0.5, options: .transitionFlipFromLeft, animations: {
             self.vwContainer.addSubview(self.child1ViewController.view)
@@ -25,17 +25,17 @@ class ParentChildViewController: UIViewController {
         
         child1ViewController.view.frame = vwContainer.bounds
         child1ViewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        child1ViewController.didMove(toParentViewController: self)
+        child1ViewController.didMove(toParent: self)
     }
     
     @IBAction func tapChild2(_ sender: Any) {
-        self.addChildViewController(child2ViewController)
+        self.addChild(child2ViewController)
         
         UIView.transition(with: self.vwContainer, duration: 0.5, options: .transitionFlipFromLeft, animations: {
             self.vwContainer.addSubview(self.child2ViewController.view)
         }, completion: nil)
         
-        child2ViewController.didMove(toParentViewController: self)
+        child2ViewController.didMove(toParent: self)
     }
     
     
@@ -69,9 +69,9 @@ class Child2ViewController: UIViewController {
 
 extension UIViewController {
     func add(_ child: UIViewController) {
-        self.addChildViewController(child)
+        self.addChild(child)
         self.view.addSubview(child.view)
-        child.didMove(toParentViewController: self)
+        child.didMove(toParent: self)
     }
 
     func remove() {
@@ -79,8 +79,8 @@ extension UIViewController {
             return
         }
 
-        willMove(toParentViewController: nil)
+        willMove(toParent: nil)
         view.removeFromSuperview()
-        removeFromParentViewController()
+        removeFromParent()
     }
 }
