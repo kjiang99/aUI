@@ -8,7 +8,6 @@
 import UIKit
 import Foundation
 
-
 class BugFactory {
     static let bugTints: [UIColor] = [.black, .brightBlueColor, .brightRedColor, .brightGreenColor]
     static let shakeRotations = [Double.pi/16, Double.pi/8, Double.pi/8, Double.pi/24]

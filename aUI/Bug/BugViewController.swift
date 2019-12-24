@@ -5,11 +5,9 @@
 //  Created by Haojun Jiang on 1/2/18.
 //  Copyright © 2018 Haojun Jiang. All rights reserved.
 //
-
 import UIKit
 
 class BugViewController: UIViewController {
-
     let bugFactory = BugFactory.sharedInstance()
     let maxBugs = 100
     let moveDuration = 3.0
@@ -23,6 +21,7 @@ class BugViewController: UIViewController {
         self.view.addGestureRecognizer(singleTapRecognizer)
     }
     
+    @IBOutlet weak var bugCount: UILabel!
     
     @objc func handleSingleTap(_ sender: UITapGestureRecognizer) {
         if sender.state == .ended {
@@ -39,6 +38,7 @@ class BugViewController: UIViewController {
             bugs.append(newBug)
             view.addSubview(newBug)
             moveBugsAnimation()
+            bugCount.text = "Total Bugs: \(bugs.count)"
         }
         //        debugPrint(self)
         //        print (self)
