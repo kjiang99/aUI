@@ -29,7 +29,7 @@ class ImagePickerViewController: UIViewController {
     @IBOutlet weak var blueSwitch: UISwitch!
     @IBOutlet weak var colorView: UIView!
     
-    @IBAction func changeColorComponent (_ sender: Any) {
+    @IBAction func changeColorComponent (_ sender: UISwitch) {
         let r: CGFloat = self.redSwitch.isOn ? 1 : 0
         let g: CGFloat = self.greenSwitch.isOn ? 1 : 0
         let b: CGFloat = self.blueSwitch.isOn ? 1 : 0

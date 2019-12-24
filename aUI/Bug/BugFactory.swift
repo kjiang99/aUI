@@ -5,16 +5,11 @@
 //  Created by Haojun Jiang on 1/2/18.
 //  Copyright © 2018 Haojun Jiang. All rights reserved.
 //
-
 import UIKit
 import Foundation
 
 
-
 class BugFactory {
-    
-    // MARK: Properties
-    
     static let bugTints: [UIColor] = [.black, .brightBlueColor, .brightRedColor, .brightGreenColor]
     static let shakeRotations = [Double.pi/16, Double.pi/8, Double.pi/8, Double.pi/24]
     static let shakeDurations = [0.3, 3.0, 0.1, 0.5]
@@ -25,8 +20,6 @@ class BugFactory {
     }
     
     var currentBugType = BugType.basic
-    
-    // MARK: Create Bug
     
     func createBug() -> UIImageView {
         let bug = UIImageView(frame: CGRect(x: -100, y: -100, width: 128, height: 128))
@@ -47,10 +40,7 @@ class BugFactory {
         return bug
     }
     
-    // MARK: Shared Instance
-    
-    class func sharedInstance() -> BugFactory {
-        
+    class func sharedInstance() -> BugFactory {        
         struct Singleton {
             static var sharedInstance = BugFactory()
         }
