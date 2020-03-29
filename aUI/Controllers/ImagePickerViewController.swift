@@ -93,10 +93,12 @@ class ImagePickerViewController: UIViewController {
         let task = URLSession.shared.dataTask(with: imageURL) { (data, response, error) in
             if error == nil {
                 let downloadImage = UIImage(data: data!)
+                sleep(5)  //sleeps 5 seconds in another thread. test async
                 self.performUIUpdatesOnMain {
                     self.internetImageView.image = downloadImage
+                    self.internetImageView.contentMode = .scaleAspectFit
                     self.internetImageView.backgroundColor = .white
-                    self.labelUrl.text = "From: \(imageUrlString)"
+                    self.labelUrl.text = "\(imageUrlString)"
                 }
             } else {
                 print(error.debugDescription)
@@ -117,8 +119,8 @@ class ImagePickerViewController: UIViewController {
 
 extension ImagePickerViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-// Local variable inserted by Swift 4.2 migrator.
-let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
+        // Local variable inserted by Swift 4.2 migrator.
+        let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
 
         let chosenImage = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.originalImage)] as! UIImage
         photoLibraryView.image = chosenImage

@@ -79,8 +79,8 @@ extension UIViewController {
             return
         }
 
-        willMove(toParent: nil)
-        view.removeFromSuperview()
-        removeFromParent()
+        self.willMove(toParent: nil)
+        self.view.removeFromSuperview()
+        self.removeFromParent()
     }
 }
