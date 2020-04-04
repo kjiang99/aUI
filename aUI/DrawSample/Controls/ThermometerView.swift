@@ -84,8 +84,7 @@ class ThermometerView: UIView {
         
         levelLayer.mask = maskLayer
         
-        let pan = UIPanGestureRecognizer(target: self,
-                                         action: #selector(handlePan(gesture:)))
+        let pan = UIPanGestureRecognizer(target: self, action: #selector(handlePan(gesture:)))
         addGestureRecognizer(pan)
     }
     

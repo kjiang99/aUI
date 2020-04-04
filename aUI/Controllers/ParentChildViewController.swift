@@ -23,9 +23,9 @@ class ParentChildViewController: UIViewController {
             self.vwContainer.addSubview(self.child1ViewController.view)
         }, completion: nil)
         
+        child1ViewController.didMove(toParent: self)
         child1ViewController.view.frame = vwContainer.bounds
         child1ViewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        child1ViewController.didMove(toParent: self)
     }
     
     @IBAction func tapChild2(_ sender: Any) {

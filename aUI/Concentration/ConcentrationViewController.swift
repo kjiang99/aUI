@@ -14,6 +14,12 @@ class ConcentrationViewController: UIViewController {
         return (cardButtons.count + 1) / 2
     }
     
+    /* Same as above, just use lazy with closure
+    lazy var numberOfPairsOfCards: Int  = {
+        return (cardButtons.count + 1) / 2
+    }()
+     */
+    
     private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
     
     private(set) var flipCount = 0 {

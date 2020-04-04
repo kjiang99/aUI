@@ -990,14 +990,14 @@
                                                 <rect key="frame" x="0.0" y="115" width="375" height="115"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccI-Yu-nrI">
-                                                        <rect key="frame" x="0.0" y="0.0" width="148.66666666666666" height="115"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="126" height="115"/>
                                                         <state key="normal" title="Pick from Internet"/>
                                                         <connections>
                                                             <action selector="pickFromInternet:" destination="JB9-Uw-1NI" eventType="touchUpInside" id="yiz-r2-M2W"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogf-6O-6CK">
-                                                        <rect key="frame" x="148.66666666666663" y="0.0" width="226.33333333333337" height="115"/>
+                                                        <rect key="frame" x="126" y="0.0" width="249" height="115"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
