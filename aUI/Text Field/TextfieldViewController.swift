@@ -9,7 +9,6 @@
 import UIKit
 
 class TextfieldViewController: UIViewController {
-
     @IBOutlet weak var textField1: UITextField!
     @IBOutlet weak var textField2: UITextField!
     @IBOutlet weak var textField3: UITextField!
@@ -46,7 +45,20 @@ class TextfieldViewController: UIViewController {
     }
     
     @objc func didTapTouch(sender: UIGestureRecognizer) {
-      view.endEditing(true)
+        view.endEditing(true)
+    }
+    
+    
+    @IBAction func addCustomAlert (_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let alertController = storyboard.instantiateViewController(withIdentifier: "ChildViewController1") as? ChildViewController1 {
+            alertController.onCancelButtonTapped = { [weak self] in
+                self?.dismiss(animated: true, completion: nil)
+            }
+            alertController.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+            alertController.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
 }
 
@@ -58,7 +70,7 @@ extension TextfieldViewController: UITextFieldDelegate {
         
         self.characterCountLabel.isHidden = newText.length == 0
         self.characterCountLabel.text = String (newText.length)
-    
+        
         return true
     }
     
