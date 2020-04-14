@@ -26,8 +26,9 @@ class ColorCollectionViewDatasource: NSObject, UICollectionViewDataSource, UICol
         let columns: CGFloat = 3
         let collectionViewWidth = collectionView.bounds.width
         let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
+        let sectionInsets = flowLayout.sectionInset.left + flowLayout.sectionInset.right
         let spaceBetweenCells = flowLayout.minimumInteritemSpacing * (columns - 1)
-        let adjustedWidth = collectionViewWidth - spaceBetweenCells
+        let adjustedWidth = collectionViewWidth - spaceBetweenCells - sectionInsets
         let width: CGFloat = floor(adjustedWidth / columns)
         let height: CGFloat = 50
         return CGSize(width: width, height: height)
