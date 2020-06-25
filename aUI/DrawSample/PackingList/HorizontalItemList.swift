@@ -15,13 +15,13 @@ class HorizontalItemList: UIScrollView {
     let buttonWidth: CGFloat = 60.0
     let padding: CGFloat = 10.0
     
-    required init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
+//    required init(coder aDecoder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
+//    
+//    override init(frame: CGRect) {
+//        super.init(frame: frame)
+//    }
     
     convenience init(inView: UIView) {
         let rect = CGRect(x: 0, y: 120.0, width: inView.frame.width, height: 80.0)

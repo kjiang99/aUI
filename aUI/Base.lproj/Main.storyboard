@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EYj-Ec-nze">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EYj-Ec-nze">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -542,12 +542,12 @@
                                                     <segue destination="YQO-18-pLV" kind="show" id="7qi-FL-inh"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mt0-O5-nry">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKe-Cj-OhT">
                                                 <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="115"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                <state key="normal" title="Gesture"/>
+                                                <state key="normal" title="Gift Card"/>
                                                 <connections>
-                                                    <segue destination="mxF-67-OCc" kind="show" id="CCB-SP-TaS"/>
+                                                    <segue destination="gwy-Q8-125" kind="show" id="0p5-BN-4lM"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -563,13 +563,8 @@
                                                     <segue destination="xY0-Ni-bXw" kind="show" id="4gR-8H-hDc"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKe-Cj-OhT">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XG6-Yy-Id5">
                                                 <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="115"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                <state key="normal" title="Gift Card"/>
-                                                <connections>
-                                                    <segue destination="gwy-Q8-125" kind="show" id="0p5-BN-4lM"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -577,11 +572,19 @@
                                         <rect key="frame" x="0.0" y="345" width="375" height="115"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ab4-Is-wrU">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="115"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="115"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                 <state key="normal" title="ParentChild"/>
                                                 <connections>
                                                     <segue destination="3WC-Xa-bB9" kind="show" id="jNH-0x-42c"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mt0-O5-nry">
+                                                <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="115"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                                <state key="normal" title="Gesture"/>
+                                                <connections>
+                                                    <segue destination="mxF-67-OCc" kind="show" id="CCB-SP-TaS"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -994,14 +997,14 @@
                                                 <rect key="frame" x="0.0" y="115" width="375" height="115"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccI-Yu-nrI">
-                                                        <rect key="frame" x="0.0" y="0.0" width="123.33333333333333" height="115"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="123" height="115"/>
                                                         <state key="normal" title="Pick from Internet"/>
                                                         <connections>
                                                             <action selector="pickFromInternet:" destination="JB9-Uw-1NI" eventType="touchUpInside" id="yiz-r2-M2W"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogf-6O-6CK">
-                                                        <rect key="frame" x="123.33333333333333" y="0.0" width="251.66666666666669" height="115"/>
+                                                        <rect key="frame" x="123" y="0.0" width="252" height="115"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>

@@ -59,7 +59,7 @@ class ChildViewController1: UIViewController {
     
     
     func initializeAlertView() {
-        let alertView: UIView = {
+        let alertContainerView: UIView = {
             let uiView = UIView()
             uiView.backgroundColor = .lightGray
             uiView.layer.cornerRadius = 20
@@ -105,8 +105,8 @@ class ChildViewController1: UIViewController {
         }()
         
         
-        self.view.addSubview(alertView)
-        alertView.addSubview(stackView)
+        self.view.addSubview(alertContainerView)
+        alertContainerView.addSubview(stackView)
         stackView.addArrangedSubview(connectingLabel)
         stackView.addArrangedSubview(activityIndicator)
         stackView.addArrangedSubview(cancelButton)
@@ -114,15 +114,15 @@ class ChildViewController1: UIViewController {
         let safeGuide = self.view.safeAreaLayoutGuide
         var constraints = [NSLayoutConstraint]()
         
-        constraints.append(alertView.centerYAnchor.constraint(equalTo: safeGuide.centerYAnchor, constant: 0))
-        constraints.append(alertView.heightAnchor.constraint(equalToConstant: 150))
-        constraints.append(alertView.leadingAnchor.constraint(equalTo: safeGuide.leadingAnchor, constant: 50))
-        constraints.append(alertView.trailingAnchor.constraint(equalTo: safeGuide.trailingAnchor, constant: -50))
+        constraints.append(alertContainerView.centerYAnchor.constraint(equalTo: safeGuide.centerYAnchor, constant: 0))
+        constraints.append(alertContainerView.heightAnchor.constraint(equalToConstant: 150))
+        constraints.append(alertContainerView.leadingAnchor.constraint(equalTo: safeGuide.leadingAnchor, constant: 50))
+        constraints.append(alertContainerView.trailingAnchor.constraint(equalTo: safeGuide.trailingAnchor, constant: -50))
         
-        constraints.append(stackView.topAnchor.constraint(equalTo: alertView.topAnchor, constant: 0))
-        constraints.append(stackView.bottomAnchor.constraint(equalTo: alertView.bottomAnchor, constant: 0))
-        constraints.append(stackView.leadingAnchor.constraint(equalTo: alertView.leadingAnchor, constant: 0))
-        constraints.append(stackView.trailingAnchor.constraint(equalTo: alertView.trailingAnchor, constant: 0))
+        constraints.append(stackView.topAnchor.constraint(equalTo: alertContainerView.topAnchor, constant: 0))
+        constraints.append(stackView.bottomAnchor.constraint(equalTo: alertContainerView.bottomAnchor, constant: 0))
+        constraints.append(stackView.leadingAnchor.constraint(equalTo: alertContainerView.leadingAnchor, constant: 0))
+        constraints.append(stackView.trailingAnchor.constraint(equalTo: alertContainerView.trailingAnchor, constant: 0))
         
         NSLayoutConstraint.activate(constraints)
     }
