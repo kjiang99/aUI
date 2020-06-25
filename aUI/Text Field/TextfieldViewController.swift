@@ -12,7 +12,8 @@ class TextfieldViewController: UIViewController {
     @IBOutlet weak var textField1: UITextField!
     @IBOutlet weak var textField2: UITextField!
     @IBOutlet weak var textField3: UITextField!
-    @IBOutlet weak var characterCountLabel: UILabel!
+    @IBOutlet weak var textField3CountLabel: UILabel!
+    @IBOutlet weak var textField3TextLabel: UILabel!
     
     @IBOutlet weak var textField4: UITextField!
     @IBOutlet weak var textField5: UITextField!
@@ -33,7 +34,8 @@ class TextfieldViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.characterCountLabel.isHidden = true
+        self.textField3CountLabel.isHidden = true
+        self.textField3TextLabel.isHidden = true
         self.textField1.delegate = emojiDelegate
         self.textField2.delegate = colorizerDelegate
         self.textField3.delegate = self
@@ -68,8 +70,11 @@ extension TextfieldViewController: UITextFieldDelegate {
         var newText = textField.text! as NSString
         newText = newText.replacingCharacters(in: range, with: string) as NSString
         
-        self.characterCountLabel.isHidden = newText.length == 0
-        self.characterCountLabel.text = String (newText.length)
+        self.textField3CountLabel.isHidden = newText.length == 0
+        self.textField3CountLabel.text = String (newText.length)
+        
+        self.textField3TextLabel.isHidden = newText.length == 0
+        self.textField3TextLabel.text = String(newText)
         
         return true
     }
