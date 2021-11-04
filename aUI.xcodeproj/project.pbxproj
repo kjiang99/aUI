@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B22068D27346D3A0019C465 /* CustomSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B22068C27346D3A0019C465 /* CustomSliderViewController.swift */; };
 		5BB6B1B22396EFA7007F76F8 /* ParentChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6B1B12396EFA7007F76F8 /* ParentChildViewController.swift */; };
 		884E29311FF437DC00B7C860 /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884E29301FF437DC00B7C860 /* DiceViewController.swift */; };
 		88711A591FF2B7B200BA99F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88711A581FF2B7B200BA99F2 /* AppDelegate.swift */; };
@@ -82,6 +83,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5B22068C27346D3A0019C465 /* CustomSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSliderViewController.swift; sourceTree = "<group>"; };
 		5BB6B1B12396EFA7007F76F8 /* ParentChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentChildViewController.swift; sourceTree = "<group>"; };
 		884E29301FF437DC00B7C860 /* DiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
 		88711A551FF2B7B200BA99F2 /* aUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,6 +140,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B22068927346C8A0019C465 /* CustomSlider */ = {
+			isa = PBXGroup;
+			children = (
+				5B22068C27346D3A0019C465 /* CustomSliderViewController.swift */,
+			);
+			path = CustomSlider;
+			sourceTree = "<group>";
+		};
 		88711A4C1FF2B7B200BA99F2 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +180,7 @@
 				D7814179226398A100062377 /* DrawSample */,
 				D7DB30771FF9427700E438E4 /* Text Field */,
 				D72E4E7523445E1900D976D8 /* Gift */,
+				5B22068927346C8A0019C465 /* CustomSlider */,
 			);
 			path = aUI;
 			sourceTree = "<group>";
@@ -408,6 +419,7 @@
 				D781417B226398EF00062377 /* SamplesTableViewController.swift in Sources */,
 				D7BA4B091FFA95DA0091F8C7 /* ZipCodeTextFieldDelegate.swift in Sources */,
 				88711A591FF2B7B200BA99F2 /* AppDelegate.swift in Sources */,
+				5B22068D27346D3A0019C465 /* CustomSliderViewController.swift in Sources */,
 				D72079EC226564B7007FCD31 /* GraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
