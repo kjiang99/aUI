@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5B22068D27346D3A0019C465 /* CustomSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B22068C27346D3A0019C465 /* CustomSliderViewController.swift */; };
+		5B4F62BE2739B9A600B1FAA3 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4F62BD2739B9A600B1FAA3 /* CustomSlider.swift */; };
 		5BB6B1B22396EFA7007F76F8 /* ParentChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6B1B12396EFA7007F76F8 /* ParentChildViewController.swift */; };
 		884E29311FF437DC00B7C860 /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884E29301FF437DC00B7C860 /* DiceViewController.swift */; };
 		88711A591FF2B7B200BA99F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88711A581FF2B7B200BA99F2 /* AppDelegate.swift */; };
@@ -84,6 +85,7 @@
 
 /* Begin PBXFileReference section */
 		5B22068C27346D3A0019C465 /* CustomSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSliderViewController.swift; sourceTree = "<group>"; };
+		5B4F62BD2739B9A600B1FAA3 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 		5BB6B1B12396EFA7007F76F8 /* ParentChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentChildViewController.swift; sourceTree = "<group>"; };
 		884E29301FF437DC00B7C860 /* DiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
 		88711A551FF2B7B200BA99F2 /* aUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				5B22068C27346D3A0019C465 /* CustomSliderViewController.swift */,
+				5B4F62BD2739B9A600B1FAA3 /* CustomSlider.swift */,
 			);
 			path = CustomSlider;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D72079E7226564B7007FCD31 /* ClockView.swift in Sources */,
+				5B4F62BE2739B9A600B1FAA3 /* CustomSlider.swift in Sources */,
 				D7BA4B311FFC35150091F8C7 /* BugSettingsViewController.swift in Sources */,
 				D777E5A42345A0D300C1A88D /* GiftCardCollectionViewCell.swift in Sources */,
 				D77292132013A27C005F1860 /* Concentration.swift in Sources */,
