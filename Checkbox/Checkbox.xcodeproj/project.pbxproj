@@ -96,9 +96,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 826072E51F2C9ECF003EE936 /* Build configuration list for PBXNativeTarget "Checkbox" */;
 			buildPhases = (
+				826072DA1F2C9ECF003EE936 /* Headers */,
 				826072D81F2C9ECF003EE936 /* Sources */,
 				826072D91F2C9ECF003EE936 /* Frameworks */,
-				826072DA1F2C9ECF003EE936 /* Headers */,
 				826072DB1F2C9ECF003EE936 /* Resources */,
 			);
 			buildRules = (
