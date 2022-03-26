@@ -41,7 +41,7 @@ class SamplesTableViewController: UITableViewController {
         let sample = sampleNames[indexPath.row]
         let controller = preview.instantiateViewController(withIdentifier: sample)
         formatCloseButton(in: controller)
-        present(controller, animated: true, completion: nil)
+        self.present(controller, animated: true, completion: nil)
     }
     
     

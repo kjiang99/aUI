@@ -13,37 +13,6 @@ import UIKit
 //https://medium.com/@0209neha/creating-a-custom-uislider-7756bf898832
 
 class CustomSlider: UISlider {
-//    func addTickticksView -> UIView {
-//        UIView
-//        var stepValue = (self.maximumValue - self.minimumValue) /  Float(self.numberOfTicks)
-//    }
-//
-    
-//    override func thumbRect(forBounds bounds: CGRect, trackRect rect: CGRect, value: Float) -> CGRect
-//    {
-//        let unadjustedThumbrect = super.thumbRect(forBounds: bounds, trackRect: rect, value: value)
-//
-//      let thumbOffsetToApplyOnEachSide: CGFloat = 7
-//      let minOffsetToAdd = -thumbOffsetToApplyOnEachSide
-//      let offsetForValue = minOffsetToAdd + (14 * CGFloat(value / maximumValue))
-//
-//      var origin = unadjustedThumbrect.origin
-//
-//      origin.x += offsetForValue
-//
-//
-//        if !offsetForValue.isNaN {
-//        delegate.offsetLabel.text = "offset: \(offsetForValue)"
-//        }
-//
-//      return CGRect(origin: origin, size: unadjustedThumbrect.size)
-//    }
-    
-//    weak var delegate: ViewController!
-//    private let thumbWidth: Float = 14
-    
-    
-    
     override func layoutSubviews() {
         super.layoutSubviews()
         addTicksLabels()
@@ -105,29 +74,5 @@ class CustomSlider: UISlider {
         let frameEmptyView = CGRect(x: 0, y: self.bounds.maxY, width: 20, height: 12)
         emptyView.frame = frameEmptyView
         addSubview(emptyView)
-        
-        
-//
-//        let label2 = UILabel()
-//        label2.text = "2"
-//        label2.translatesAutoresizingMaskIntoConstraints = false
-//        addSubview(label2)
-//        let frame2 = CGRect(x: origin + min - 3, y: self.bounds.midY + 10, width: 12, height: 16)
-//        label2.frame = frame2
-       
-//        let label4 = UILabel()
-//        label4.translatesAutoresizingMaskIntoConstraints = false
-//        label4.text = "4"
-//        addSubview(label4)
-//        let frame4 = CGRect(x: origin + third - 6, y: self.bounds.maxY + 8, width: 12, height: 16)
-//        label4.frame = frame4
-
-//        let label6 = UILabel()
-//        label6.translatesAutoresizingMaskIntoConstraints = false
-//        label6.text = "6"
-//        addSubview(label6)
-//        let frame6 = CGRect(x: origin + twoThirds - 6, y: self.bounds.maxY + 8, width: 12, height: 16)
-//        label6.frame = frame6
-        
     }
 }

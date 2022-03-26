@@ -46,7 +46,7 @@ class PackingListViewController: UIViewController {
     
     
     func makeSlider() {
-        slider = HorizontalItemList(inView: view)
+        slider = HorizontalItemList(inView: self.view)
         slider.didSelectItem = { [weak self] index in //Add [weak self]
             self?.items.append(index)
 //            self.tableView.reloadData()
